@@ -1,0 +1,316 @@
+LightRoom Hallway06 "Hallway, 6th Floor"
+{
+	long_desc
+	{
+		"This is a non-descript, plain hallway on the 6th Floor of the Wilcots Building. To the west are more apartments and directly to the
+		east is yours. There is also an exit into the stairwell where everyone's mailboxes are located."
+	}
+
+w_to
+	{
+		"You take a brief look in that direction to see if there is anything odd happening... there isn't, so you return."
+	}
+e_to 
+{
+	return OfficeDoor
+}
+
+in_to
+{
+	return Stair06Door
+}
+
+out_to
+{
+	return Stair06Door
+}
+
+}
+
+
+LightRoom Stairwell06 "Stairwell, 6th Floor"
+{
+	long_desc
+	{
+		"In an effort to maximize floor space, the mailboxes in this complex are carefully stowed away in the stairwell of one's particular floor. 
+		You weren't expecting any packages, but the mailman was clearly here recently, as evidenced by the dust and grime on the floor. 
+		The door back to the 6th floor hallway is south and the 5th floor stairwell is downwards."
+	}
+
+d_to StairWell05
+
+s_to 
+	{
+		return Stair06Door
+	}
+out_to
+	{
+		return Stair06Door
+	}
+
+}
+
+
+door Stair06Door "stairwell door"
+{
+	nouns "door"
+	adjective "stairwell"
+	article "the"
+	between Hallway06 Stairwell06
+	is openable, not open, not lockable
+
+	long_desc
+	{
+		"This door is made of aluminum -- rare for the construction of everyday items on Phobos."
+	}
+}
+
+
+LightRoom Hallway05 "Hallway, 5th Floor"
+{
+	long_desc
+	{
+		"This is a non-descript, plain hallway on the 5th Floor of the Wilcots Building. Exits lead west, to the rest of the apartments on this floor and into
+		the stairwell."
+	}
+
+w_to
+	{
+		"You take a brief look in that direction to see if there is anything odd happening... there isn't, so you return."
+	}
+}
+
+
+LightRoom Stairwell05 "Stairwell, 5th Floor"
+{
+	long_desc
+	{
+		"Exits lead up and down from this section of the stairwell. "
+	}
+
+d_to
+{
+	return StairWell04
+}
+
+u_to
+{
+	return StairWell06
+}
+
+}
+
+
+door Stair05Door "stairwell door"
+{
+	nouns "door"
+	article "the"
+	between Hallway05 Stairwell05
+	is openable, not open, not lockable
+
+	long_desc
+	{
+		"This door is made of aluminum -- rare for the construction of everyday items on Phobos."
+	}
+}
+
+
+LightRoom Hallway04 "Hallway, 4th Floor"
+{
+	long_desc
+	{
+		"This is a non-descript, plain hallway on the 4th Floor of the Wilcots Building. Exits lead west, to the rest of the apartments on this floor and into
+		the stairwell."
+	}
+
+w_to
+	{
+		"You take a brief look in that direction to see if there is anything odd happening... there isn't, so you return."
+	}
+}
+
+
+LightRoom Stairwell04 "Stairwell, 4th Floor"
+{
+	long_desc
+	{
+		"Exits lead up and down from this section of the stairwell."
+	}
+
+d_to
+{
+	return StairWell03
+}
+
+u_to
+{
+	return StairWell05
+}
+
+}
+
+
+door Stair04Door "stairwell door"
+{
+	nouns "door"
+	article "the"
+	between Hallway04 Stairwell04
+	is openable, not open, not lockable
+
+	long_desc
+	{
+		"This door is made of aluminum -- rare for the construction of everyday items on Phobos."
+	}
+}
+
+
+LightRoom Hallway03 "Hallway, 3rd Floor"
+{
+	long_desc
+	{
+		"This is a non-descript, plain hallway on the 3rd Floor of the Wilcots Building. Exits lead west, to the rest of the apartments on this floor and into
+		the stairwell."
+	}
+
+w_to
+	{
+		"You take a brief look in that direction to see if there is anything odd happening... there isn't, so you return."
+	}
+}
+
+
+LightRoom Stairwell03 "Stairwell, 3rd Floor"
+{
+	long_desc
+	{
+		"Exits lead up and down from this section of the stairwell."
+	}
+
+d_to
+{
+	return StairWell02
+}
+
+u_to
+{
+	return StairWell04
+}
+
+}
+
+
+door Stair03Door "stairwell door"
+{
+	nouns "door"
+	article "the"
+	between Hallway03 Stairwell03
+	is openable, not open, not lockable
+
+	long_desc
+	{
+		"This door is made of aluminum -- rare for the construction of everyday items on Phobos."
+	}
+}
+
+
+LightRoom Hallway02 "Hallway, 2nd Floor"
+{
+	long_desc
+	{
+		"This is a non-descript, plain hallway on the 6th Floor of the Wilcots Building. Exits lead west, to the rest of the apartments on this floor and into
+		the stairwell."
+	}
+
+w_to
+	{
+		"You take a brief look in that direction to see if there is anything odd happening... there isn't, so you return."
+	}
+
+}
+
+
+LightRoom Stairwell02 "Stairwell, 2nd Floor"
+{
+	long_desc
+	{
+		"Exits lead up and down from this section of the stairwell."
+	}
+
+d_to
+{
+	return StairWell01
+}
+
+u_to
+{
+	return StairWell03
+}
+
+}
+
+
+door Stair02Door "stairwell door"
+{
+	nouns "door"
+	article "the"
+	between Hallway02 Stairwell02
+	is openable, not open, not lockable
+
+	long_desc
+	{
+		"This door is made of aluminum -- rare for the construction of everyday items on Phobos."
+	}
+}
+
+
+LightRoom Hallway01 "Hallway, 1st Floor"
+{
+	long_desc
+	{
+		"This is a non-descript, plain hallway on the 6th Floor of the Wilcots Building. Exits lead west, to the rest of the apartments on this floor and into
+		the stairwell."
+	}
+
+w_to
+	{
+		"You take a brief look in that direction to see if there is anything odd happening... there isn't, so you return."
+	}
+}
+
+
+LightRoom Stairwell01 "Stairwell, 1st Floor"
+{
+	long_desc
+	{
+		"You are on the ground floor of your apartment building. No matter how hard the cleaning crew tried, they could never keep the moon dirt from 
+		building up in this stairwell. Some of them died in the \Iapres-planete\i drinking party after \ITaft\i got frosted and those that remained were
+		shuttled off the planet two days ago -- making any further spring cleaning unlikely.\n"
+
+		"To the northwest is a curving walkway that leads outside, while stairs lead up towards the second story stairwell."
+	}
+
+n_to Alley01
+out_to Alley01
+nw_to Alley01
+
+u_to
+{
+	return StairWell02
+}
+
+}
+
+
+door Stair01Door "stairwell door"
+{
+	nouns "door"
+	article "the"
+	between Hallway02 Stairwell02
+	is openable, not open, not lockable
+
+	long_desc
+	{
+		"This door is made of aluminum -- rare for the construction of everyday items on Phobos."
+	}
+}
+

@@ -1,0 +1,707 @@
+- check giving wallet to old soul 
+- check who is joe in office
+- check opening the desk in office
+- check listen phone, listen to phone and t phone 
+- check showing wallet to old soul (remote object thing)
+- check how Joe is described in the office
+
+
+In Office
+>look out window
+You don’t need to use the word “window”.
+>x ceiling
+You don’t need to use the word “ceiling”.
+>play chess
+You don’t need to use the word “play”.
+
+
+
+In the response to "x chmod" - are Melvin and Mendenhall the same
+person? Should the first reference give the whole name?
+
+After the shooting, if you look, Scarlett is still sitting next to
+you. Actually, maybe that's not a bug, since you don't realize at
+first that she's been shot...
+
+"who is joe" in office - Chmod isn't there, but you still get the
+"Chmod doesn't know" message
+
+The couch is described initially as a "sofa", but "sofa" isn't implemented
+
+"Projector" isn't implemented
+
+Joe Carter isn't mentioned in the room description (only when you x the couch)
+
+and, obviously, I'm stuck on how to get the message from the phone.
+I'm off -- will do more later. If you get this, can you let me know
+the command to get the message?
+
+
+Transcription on.
+
+What next? >x chmod
+Artificial intelligence reached a breakthrough years ago when a computer science grad student and extreme programmer named Melvin tried to get his robot to drive in downtown Denver during rush 
+hour. Mendenhall learned that his construct was wholly able to blend in from exit 195 to 240 even though his code had several logic errors in the driving routines. The robot noticed as many unblinking 
+turn signals, acts of tailgating and poor decision making during lane merges from the other drivers — as well as producing as many extended middle fingers — as Mendenhall’s own driving did. 
+Because you write the tests before the code in extreme programming Mendenhall pronounced his work as complete and graduated. 
+
+The next day Mendenhall’s robot left at half past three and initiated the obligatory evening-commute-turned-parking-lot by crashing into an abandoned Passat in the breakdown lane. Mendenhall 
+pronounced it as the proudest day of his life. 
+
+Mr Chmod is a sentient shop vac and likewise, extreme programmed. He is two meters in height with long, floppy arms and a variety of attachments on the back. He has tank tread at the bottom of 
+his slender base that provide locomotion and a small cynlinder at head level that contains most of his brain procedures and a Toronto Blue Jays cap you gave him. He is gray and red and has a 
+‘TYPE R’ sticker that was unknowingly placed on his back by you.
+
+What next? >x attachments
+You don’t need to use the word “attachments”.
+
+What next? >l
+
+Outside Kangaroo’s Midnight Gentleman’s Club
+You are in line, waiting for entry into Kangaroo’s Midnight Gentleman’s Club, the only respectable and accessible media outlet for important political and social announcements like who the new dog 
+catcher is, whether or not you’re going to get that pro sports team and when, exactly, Phobos is going to break up into an awfully inhospitable ring around Mars. The club itself is to the east.
+
+What next? >e
+The door is locked.
+
+[We won’t bother with the ‘What Next?’ bit any longer.]
+
+>i
+You are carrying a red keycard.
+
+>x door
+It’s a rectangular slab of rough moon rock with a locking mechanism in place to preserve some semblance of Phobic order.
+
+>unlock door
+You’re not holding any key that fits.
+
+>chmod, open door
+Mr Chmod can’t do that with the door.
+
+>knock on door
+Nothing happens.
+
+>i
+You are carrying a red keycard.
+
+>l
+
+Outside Kangaroo’s Midnight Gentleman’s Club
+You are in line, waiting for entry into Kangaroo’s Midnight Gentleman’s Club, the only respectable and accessible media outlet for important political and social announcements like who the new dog 
+catcher is, whether or not you’re going to get that pro sports team and when, exactly, Phobos is going to break up into an awfully inhospitable ring around Mars. The club itself is to the east.
+
+>z
+Time passes...
+
+>z
+Time passes...
+
+>z
+Time passes...
+
+>z
+Time passes...
+
+>z
+Time passes...
+
+>unlock door with card
+That doesn’t seem to do the trick.
+
+>ask chmod about door
+Mr Chmod doesn’t seem to know anything about that.
+
+>ask chmod about club
+You don’t need to use the word “club”.
+
+>ask chmod about key
+You don’t need to use the word “key”.
+
+>chmod, unlock door
+Mr Chmod ignores you.
+
+>talk to chmod
+
+[1] “What’s new with you, pal?”
+[2] “Did I tell you I know what the announcement is?”
+[3] “Hey, how in love with your studio apartment are you?”
+
+Select an option or 0 to say nothing >> 1
+
+“Little,” says Chmod. “I’ve been here every night for the last two weeks, ever since I cashed out my Roth IRA.”
+
+“Whoa!” you say. “Hey, congratulations. I thought you were going to use that money to get off this moon, though? Why would you want to hang around the sphincter of the solar system for a second 
+longer than you had to?”
+
+“Well, have you seen the new girls they’ve got working here? It changed everything. I can’t leave. Not yet. It’s very frustrating.”
+
+“Because you’re a robot and they are cloned pantomimes of long-dead Earth girls, and how will they ever understand you, coming from such radically different worlds?”
+
+“No. Because I haven’t got a penis.” Always an uncomfortable topic when broached, you stare at the ground for a few moments. It still looks like gray sand. “Besides,” adds Chmod, “this place only 
+allows real girls.”
+
+The doorman arrives from the north.
+
+>t doorman
+
+[1] “It is extremely important that you let me in.”
+[2] “It is sort of important that you let me in.”
+[3] “I dislike you intensely. Please let me in.”
+
+Select an option or 0 to say nothing >> 1
+
+“You need a keycard to get in tonight,” says the doorman. “Because of the high security.” An older French guy appears from the club and touches the doorman on the shoulder. 
+
+“Excusez-moi, I need to get more scrip out of my cycle.”
+
+The doorman gives him permission with a brief wave. “Just go right in when you get back,” he says. He turns his attention to you. “Anyway, show me a keycard and you’re all set. Until then, I’ll have to 
+ask you to not get aggressive.”
+
+>show keycard to doorman
+
+“Okay,” he says, “You can go in.” He lets Chmod past as well.
+
+“Hey!” cries out some nobody a few places back in line, “How come the robot gets to go in? He ain’t got a card!”
+
+“Shut up,” suggests the doorman. “You could all shut up...  The robot spent more here last night than any of you have in the last month.” That seems to satisfy the crowd for the most part, at least 
+those who care about a walking shop vac getting some place before them.
+
+Chmod bristles for a second. “That’s embarrassing, man... don’t tell them that.”
+
+The doorman looks ready to affix a ‘Lap Dance King’ sticker to Chmod.
+
+>t doorman
+You can’t think of anything to say right now.
+
+>t chmod
+
+[1] “How the hell do I get into the club?”
+[2] “Who’s this guy supposed to be? The doorman, I mean.”
+
+Select an option or 0 to say nothing >> 0
+
+You decide not to say anything.
+
+>e
+
+Purchasing Kiosk
+There is no real difference in light level between the surface of Phobos and this tight little payment chamber except that it’s more blue. To your left is a wizened old soul behind a bulletproof window. 
+You can buy a ‘membership’ for the night from him, but it’s really just a cover charge. A pair of closed, deep cyan curtains lurk east, shielding you from the debauchary beyond (in case you created 
+some interference to your moral compass by getting this far without realizing it). You can hear some muffled music in that direction and it just generally smells like ham in here.
+
+>t chmod
+
+[1] “I don’t frequent strip joints. What am I supposed to do, Chmod?”
+
+Select an option or 0 to say nothing >> 1
+
+“Just give the old man some scrip. Or wave your wallet around the room.”
+
+“Isn’t that sort of obnoxious?”
+
+“Only to poor people. And I don’t see any here.”
+
+“What about,” you bring your voice down to a murmur, “What about the old guy here?”
+
+“No,” says Chmod, at normal volume, “I literally can’t see poor people. Ha ha, why waste the cycles, right?”
+
+>g
+You can’t think of anything to say right now.
+
+>i
+You’re not carrying anything.
+
+>e
+You can’t go that way until you buy a membership for the night.
+
+>buy membership
+The old guy looks at his monitor and it pisses him off for some reason. “You got no money on you! No money, no membership, dat’s how it works, duh!” You bristle a bit at an actual adult saying 
+‘Duh’ to you. It’s clear that he’s behind a bulletproof window for a reason.
+
+>t man
+
+[1] “How did you get this job?”
+[2] “I need a membership for the night.”
+[3] “Can you let me in for free? I was invited.”
+
+Select an option or 0 to say nothing >> 3
+
+“I invite you to cram it.”
+
+>g
+
+[1] “How did you get this job?”
+[2] “I need a membership for the night.”
+
+Select an option or 0 to say nothing >> 2
+
+The old soul looks at his monitor and frowns. Well, frowns further. “You got no money. No money no membership, dat’s how it works.”
+
+>g
+
+[1] “How did you get this job?”
+[2] “I need a membership for the night.”
+
+Select an option or 0 to say nothing >> 1
+
+“You get old as me, you stop rememberrin...” he says. “Ida know, bad credit risk I guess, why else I here?”
+
+>g
+
+[1] “I need a membership for the night.”
+
+Select an option or 0 to say nothing >> 1
+
+The old soul looks at his monitor and frowns. Well, frowns further. “You got no money. No money no membership, dat’s how it works.”
+
+>g
+
+[1] “I need a membership for the night.”
+
+Select an option or 0 to say nothing >> 1
+
+The old soul looks at his monitor and frowns. Well, frowns further. “You got no money. No money no membership, dat’s how it works.”
+
+>t chmod
+
+[1] “My wallet! Chmod, I’ve lost my wallet!”
+
+Select an option or 0 to say nothing >> 1
+
+“Oh, yeah... sorry, I’m a little distracted. You left it at my apartment last night.” Mr. Chmod opens up a small compartment and hands you your wallet. “Just show this to the old guy and we can get 
+inside.”
+
+>show wallet to old guy
+The old soul doesn’t seem too interested in the wallet.
+
+>open wallet
+You can’t do that with the wallet.
+
+>x wallet
+It’s a nigh-weightless piece of folded-over plastic. It’s got an invisible chip in it that lets vendors do transactions with it wirelessly.
+
+You have 105 Phobian scrip.
+
+>give wallet
+Try giving something to someone in particular.
+
+>give wallet to man
+Such goodwill is ignored.
+
+>t man
+
+[1] “I need a membership for the night.”
+
+Select an option or 0 to say nothing >> 1
+
+“Yeah, yeah, we all gotta eat.”
+
+Huh?
+
+“Money deducted wirelessly from your account! You go in!”
+
+>e
+
+Kangaroo’s Midnight Gentleman’s Club
+Bars on all sides surround a central stage where a slick, rectangular dancing platform sits. Most adult clubs have either a Marilyn Monroe or Audrey Hepburn clone working for them because people 
+born in the 20th century don’t have their DNA under an ironclad copyright. However, the owner of this club prides himself on having no pantomimes dancing. The DJ’s patter is a painful hipster and 
+the girls hardly ever lip synch the words of the songs. The graceful arc anf beauty of women are the chief form of entertainment on Phobos — it would have been jugglers, save for the fact that the 
+weak gravity generators installed below made everyone a three-chainsaw and Tabby expert.
+
+Scarlett waves for you and Chmod to walk over and sit down next to her.
+
+There is a lone stool available for you to sit on. Luckily, it’s next to Scarlett.
+
+>sit on stool
+You get onto the uncomfortable stool.
+
+Kangaroo’s Midnight Gentleman’s Club, on the uncomfortable stool
+It’s like any other strip club in the future and past: bars on all sides surround a central stage where a slick, rectangular dancing platform sits. Twin bubbly and transparent poles on either edge of the 
+platform rise vanish into a thick, foggy ceiling, and fairly frequently a beautiful woman wraps herself around one of them. There are tables scattered all around, with their own metallic poles stretching 
+up into the nothingness.
+
+Scarlett is sitting down next to you near the stage.
+
+A gorgeous redhead gracefully struts up to the center stage wearing only stiletto heels and a microphone on a ring. She clears her voice and gives the crowd a confident smile. She’s one of the best-
+looking women ever to leave Earth and has no problem commanding the attention of the room.
+
+>x scarlett
+Scarlett is a pantomime of a girl you dated several years ago. She’s wearing an ivory-colored, long-sleeved blouse, a billowy gypsy’s skirt and a zebra-print headband.
+
+The redhead self-consciously coughs once into her microphone. “I’m Cinnamon,” she purrs. The crowd applauds and hoots. She smiles with such warmth that Mimas evaporates. “I’d like to thank 
+you all for coming tonight. We have a very special guest at the club tonight... you know him as the Governor of New York and for the campaign he’s running to be President of the United States of 
+America... Ladies and Gentlemen — “ she laughs and brings the mic away from her face for a moment. This woman has a three-picture deal back on Earth and was leaving the moon soon anyway. 
+“I present William Howard Taft!”
+
+There is applause everywhere, managing to drown out the horrible music that the DJ has faithfully not stopped playing. It’s all very enthusiastic, save for the very, very back of the club near the 
+curtains.
+
+>x curtains
+They’re thick and inviting and would make terrific bed covers. Cloth of this quality is tough to get on Phobos.
+
+Taft walks briskly up to the stage, all business. Cinnamon slowly peels off the microphone from her ring finger and passes it to Taft, bending down slightly to give him a kiss on the cheek. Taft takes 
+the opportunity to squeeze a breast, to the banal, delighted fury of the crowd. You see Scarlett wipe her brow; it’s really starting to get warm in here. Taft laughs in that sort of chortle that big guys 
+make and puts the mic on.
+
+“Thank you all for being here tonight. Thank you all...” Taft wrinkles his nose for a second as he notices the commotion going on at the back of the club.
+
+>x taft
+Taft today is not as large as he was when he was President of the United States of America, but he’s still pretty roomy. He has Criscoed brown hair, a handlebar moustache that hasn’t been in style 
+in almost 200 years and locomotes with a waddling gait.
+
+Taft begins his speech though it’s clear he’d like the room to be free of distractions. While his speech concerns a moon that nobody on Earth cares about, the fate of Phobos is still pretty critical to 
+everyone on it. After a few honeyed words to begin his opening, however, he finds the ruckus towards the back intolerable.
+
+“Excuse me,” he says, away from the microphone and to one of the club’s nearby bouncers. It appears as if Taft wants them to do something about the shouting coming from the back of the club. 
+You turn to say something snotty about Taft to Scarlett when you hear two pops — two sharp shots about two seconds apart. You see Taft collapse to the floor. Things quickly turn to bedlam inside 
+the club.
+
+>t scarlett
+Scarlett isn’t able to speak to anyone right now.
+
+>x scarlett
+Scarlett is a pantomime of a girl you dated several years ago. She’s wearing an ivory-colored, long-sleeved blouse, a billowy gypsy’s skirt and a zebra-print headband.
+
+She is dead.
+
+Chmod, facing a different direction than you, suddenly gasps. “Oh... oh, no...” 
+
+He presses one of his cold robotic hands against your shoulder and turns you around. You see Scarlett sitting upright, so comfortably in her chair... her dead eyes looking straight ahead, head 
+slumped to the side, her white blouse quickly turning a deep crimson.
+
+
+
+Long ago, far away
+
+
+Night life on Phobos consisted of throwing rocks at pantomimes of long-dead politicians and celebrities who were unpopular in their original lives.
+
+It was long before you had ever heard of Taft or shrinking orbits or localized planetary rings. It was a Saturday. You and Scarlett heard screams a few hundred meters before you even got to the gate. 
+The crowd was really giving the new guy a workout. It was theraputic for the populace — nobody who made it to Phobos wanted to stay there for more a few days, but shuttles only ran once every 
+two (Earth) months. The time died slow and hard, and punching a Mugabe kept everyone sane.
+
+There were a few rules hastily scrawled onto a tablet that you had to read before you could fork over the admission fee. You could not ask direct questions to the entertainment. You could not feed the 
+entertainment. You had to stay ten meters away from the entertainment and could only throw rocks, as tomatoes were a premium on Phobos.  Mugabe wouldn’t shut up and stop bleating so you 
+could read the rest of the rules in peace. 
+
+Mugabe kept proclaiming that he had no idea why he was chained up, why he was there, why he was being tortured, who he was... You asked the clerk about it and he just gave a bored shrug and 
+said that they get that a lot. Everyone is innocent. Nobody harmed a soul in their original lifetime - just ask them. A mime’s memories were intact from the day they died and there was usually a lot of 
+begging for forgiveness and apologizing. That wasn’t the case with the new guy. This one’s head was empty. (Technically, his head was a bruised and lumpy mess due to all the pulverized moon 
+rock that was thrown at it, but his mind was a blank, anyway.) 
+
+You screwed up your face as you entered into thought. You turned to face Scarlett. “There is something we haven’t completely considered,” you said. “Something isn’t quite right about how we’re 
+going to do this, something nobody thought of...”
+
+Scarlett cocked her head slightly, inquisitively.
+
+“What is it, honey?” she said.
+
+“Where on Phobos are we going to find any rocks?”
+
+Your Office
+It was seven (Earth) days ago that you witnessed the two murders. The shots caused half of the people in the club to panic and evacuate. Chmod felt that someone still had to deliver the news that 
+Taft traveled to say, at which point the other half of the club ran screaming. 
+
+You were given priority to leave Phobos because of your girlfriend’s death. But after taking care of some business on Earth you returned — you felt that someone should find out why two people were 
+killed, even if they were both just a couple of mimes.
+
+Your office is on the 6th floor of the tallest building on Phobos. From the roof of this building you can see the bubble and in saner days it was guarded.
+
+This room is dominated by a massive carved rock desk. A sofa is off to the side, next to your mini-fridge and chess table. On the ceiling is your projector.
+
+>x me
+You are very average and plain looking, with dark hair and almond eyes. You’re in your early thirties but look fairly younger than that, thanks to absorbing far less solar radiation than the average 
+Earthbound denizen recently. You were born and raised in a city called Syracuse, which gets only slightly colder than an average night on Phobos outside the bubble.
+
+Your name is Raif.
+
+>x desk
+Rudimentary construction sprang forth from the natural resources on Phobos, though it all seems rather samey due to the fact that there’s really just ice and rock around. Joe once said that the desk 
+resembled something in the style of Francis Jourdain, but he could hardly tell you the difference between France and Jordan or Ron Francis and Michael Jordan in his usual mental state.
+
+The desk has your phone on it.
+
+>who is joe
+Mr Chmod doesn’t seem to know anything about Joe.
+
+>x chmod
+You don’t see him.
+
+>x sofa
+You don’t need to use the word “sofa”.
+
+>open desk
+You can’t do that with the desk.
+
+>open fridge
+The food you consumed on Earth has turned you off to even the thought of Phobian delights forever. Everything here just tastes... dusty. It repulses you.
+
+>x projector
+You don’t need to use the word “projector”.
+
+>x table
+Your father gave you this set when you were thirteen.  Chess is the reason you ever set foot on Phobos in the first place — you played at tournaments all over the solar system and usually placed 
+well enough to stave off selling your knee ligaments for scrip. The current board reflects your efforts to teach Joe  how to play. He has arranged his pieces in a frowny face, which, while not 
+technically a series of legal chess moves, certainly speaks volumes on life these days, as chess is wont to do.
+
+>t joe
+That person is asleep.
+
+>l
+
+Your Office
+Your office is on the 6th floor of the tallest building on Phobos. From the roof of this building you can see the bubble and in saner days it was guarded.
+
+This room is dominated by a massive carved rock desk. A sofa is off to the side, next to your mini-fridge and chess table. On the ceiling is your projector.
+
+>wake joe
+It’s useless, he’s the most complete and dedicated sleeper you have ever known. 
+
+>x joe
+Joe has a big, friendly face, an athlete’s body and an often blank mind that betrays his origin —  he is a second pantomime of a dead baseball player. A copy of a copy.
+He is asleep on your couch.
+
+>x couch
+Your couch is glazed-over powdered moon dust, upon which is three tied-together cushions.
+
+
+Joe Carter is asleep on your couch. He had no idea you had left for Earth or subsequently returned.
+
+>l
+
+Your Office
+Your office is on the 6th floor of the tallest building on Phobos. From the roof of this building you can see the bubble and in saner days it was guarded.
+
+This room is dominated by a massive carved rock desk. A sofa is off to the side, next to your mini-fridge and chess table. On the ceiling is your projector.
+
+>x phone
+It is a sleek, black communications device, nothing special. It’s completely voice activated, making it easy to get messages.
+
+Your phone’s LCD screen is blinking, as you have a message.
+
+>t phone
+You can’t do that with the phone.
+
+>listen to message
+I don’t understand that sentence.
+
+>about
+Better start with a verb.
+
+>l
+
+Your Office
+Your office is on the 6th floor of the tallest building on Phobos. From the roof of this building you can see the bubble and in saner days it was guarded.
+
+This room is dominated by a massive carved rock desk. A sofa is off to the side, next to your mini-fridge and chess table. On the ceiling is your projector.
+
+>help
+[N]ext item                                                                                                                                          [Q]uit menu
+[P]revious item                                                                                                                                [Enter] to select
+Introduction                      
+System Requirements               
+What is Interactive Fiction?      
+Game Instructions -- Commands     
+Hints                             
+                                  
+Credits                           
+License and Copyright Information 
+About the Hugo Compiler           
+About the Programmer              
+                                  
+                                  
+Introduction                      
+Introduction                      
+System Requirements               
+System Requirements               
+What is Interactive Fiction?      
+What is Interactive Fiction?      
+Game Instructions -- Commands     
+Game Instructions -- Commands     
+Hints                             
+Hints                             
+Game Instructions -- Commands     
+
+Basic Gameplay Commands:
+NORTH to go north. Can be shortened to “n”.
+SOUTH to go south. Can be shortened to “s”.
+WEST to go west. Can be shortened to “w”.
+EAST to go east. Can be shortened to “e”.
+IN to go in.
+OUT to go out.
+UP to go up.
+DOWN to go down.
+TALK to person: Tells Raif to talk to another character. Can be shortened to “t”.
+LOOK: Prints the room description.
+EXAMINE item: Stare intensely at a particular item. Can be shortened to “x”.
+FIGHT person: Tells Raif to attack another character.
+
+Management Commands:
+INVENTORY: Displays what Raif is holding. Can be shortened to “i”.
+WAIT: Allows time to pass for one turn. Can be shortened to “z”.
+AGAIN: Repeats the last command. Can be shortened to “g”.
+SCORE: Prints the current gaming session’s score.
+
+System Commands:
+ABOUT: Prints the initial info message.
+HELP: Gets you back to these help screens.
+SAVE: Saves the game in progress. You will be prompted for a filename.
+RESTORE: Loads a saved game.
+RESTART: Begins the game anew, as if playing it for the first time.
+SCRIPT ON: Logs the game’s text to an output file.
+SCRIPT OFF: Turns off game logging.
+OOPS: When followed by a word, corrects a typo of the previous line with that word.
+UNDO: Takes back the previous command and puts the game in a state one move earlier.
+
+[Press a key...][N]ext item                                                                                                                                          [Q]uit menu
+[P]revious item                                                                                                                                [Enter] to select
+Introduction                      
+System Requirements               
+What is Interactive Fiction?      
+Game Instructions -- Commands     
+Hints                             
+                                  
+Credits                           
+License and Copyright Information 
+About the Hugo Compiler           
+About the Programmer              
+                                  
+                                  
+Game Instructions -- Commands     
+
+Your Office
+Your office is on the 6th floor of the tallest building on Phobos. From the roof of this building you can see the bubble and in saner days it was guarded.
+
+This room is dominated by a massive carved rock desk. A sofa is off to the side, next to your mini-fridge and chess table. On the ceiling is your projector.
+
+>take phone
+Taken.
+
+>listen to message
+I don’t understand that sentence.
+
+>play message
+You don’t need to use the word “play”.
+
+>i
+You are carrying your phone.
+
+>x it
+(assuming you mean the phone)
+It is a sleek, black communications device, nothing special. It’s completely voice activated, making it easy to get messages.
+
+Your phone’s LCD screen is blinking, as you have a message.
+
+>x screen
+You don’t need to use the word “screen”.
+
+>use phone
+Be a little more specific about what you’d like to do with the phone.
+
+>phone, play message
+You don’t need to use the word “play”.
+
+>xyzzy
+You don’t need to use the word “xyzzy”.
+
+>help
+[N]ext item                                                                                                                                          [Q]uit menu
+[P]revious item                                                                                                                                [Enter] to select
+Introduction                      
+System Requirements               
+What is Interactive Fiction?      
+Game Instructions -- Commands     
+Hints                             
+                                  
+Credits                           
+License and Copyright Information 
+About the Hugo Compiler           
+About the Programmer              
+                                  
+                                  
+Introduction                      
+Introduction                      
+System Requirements               
+System Requirements               
+What is Interactive Fiction?      
+What is Interactive Fiction?      
+Game Instructions -- Commands     
+Game Instructions -- Commands     
+Hints                             
+
+It is not possible to get the game in an unwinnable state. Talking to the characters is critical to advance the action, and Raif usually has a couple options for tone and/or attitude throughout the game. 
+
+
+For more specific help and hints with the game, try the Usenet newsgroup rec.games.int-fiction — the users of this group are often able to help with quality hints and solid nudges. Additionally, you 
+are invited to drop by the author’s BBS at http://www.joltcountry.com/phpBB2 where he will be able to answer any and all questions.
+
+[Press a key...][N]ext item                                                                                                                                          [Q]uit menu
+[P]revious item                                                                                                                                [Enter] to select
+Introduction                      
+System Requirements               
+What is Interactive Fiction?      
+Game Instructions -- Commands     
+Hints                             
+                                  
+Credits                           
+License and Copyright Information 
+About the Hugo Compiler           
+About the Programmer              
+                                  
+                                  
+Hints                             
+
+Your Office
+Your office is on the 6th floor of the tallest building on Phobos. From the roof of this building you can see the bubble and in saner days it was guarded.
+
+This room is dominated by a massive carved rock desk. A sofa is off to the side, next to your mini-fridge and chess table. On the ceiling is your projector.
+
+>speak to phone
+You can’t do that with the phone.
+
+>hint
+You don’t need to use the word “hint”.
+
+>i
+You are carrying your phone.
+
+>l
+
+Your Office
+Your office is on the 6th floor of the tallest building on Phobos. From the roof of this building you can see the bubble and in saner days it was guarded.
+
+This room is dominated by a massive carved rock desk. A sofa is off to the side, next to your mini-fridge and chess table. On the ceiling is your projector.
+
+>look out window
+You don’t need to use the word “window”.
+
+>x ceiling
+You don’t need to use the word “ceiling”.
+
+>play chess
+You don’t need to use the word “play”.
+
+>break phone
+Venting your frustrations on the phone won’t accomplish much.
+
+>talk
+You can’t speak to that!
+
+>eat phone
+You can’t eat the phone.
+
+>x phone
+It is a sleek, black communications device, nothing special. It’s completely voice activated, making it easy to get messages.
+
+Your phone’s LCD screen is blinking, as you have a message.
+
+>speak
+You can’t speak to that!
+
+>speak to phone
+You can’t do that with the phone.
+
+>t phone
+You can’t do that with the phone.
+
+>script off

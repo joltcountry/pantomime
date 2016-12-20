@@ -1,0 +1,1352 @@
+! Completely fake object
+scenery completely_fake "fake!"
+{
+! This hides unused words from the player.
+	nouns "screwdriver"
+	adjective "flathead"
+}
+
+scenery sky "sky"
+{
+	nouns "sky" "skyline"
+	article "the"
+
+	long_desc
+	{
+		if parent(player) is outside_tag
+		{
+			"The sky is pitch black due to the lack of an atmosphere on Phobos. You know that the life bubble is up there, though being
+			transparent, it is difficult to make out."
+		}
+		else
+		{
+			"You see nothing special."
+		}
+	}
+}
+
+
+! Scenery and other objects
+
+scenery life_bubble "bubble"
+{
+	nouns "bubble" "dome"
+	adjective "life"
+	article "the"
+
+	found_in Corridor1 Alley01 Alley02 Street01 Street02 Street03 Street04 Street05 Alley03
+
+	long_desc
+	{
+		if self is not special 
+		{
+			self is special 
+
+			"The life bubble is a clear, plastic dome placed over the hospitable part of Phobos - the colony.  In reality it should probably be a little
+			stronger than it is, but guns and knives are outlawed, so in theory everyone is safe. At any rate, you can't argue that it didn't last longer
+			than Phobos itself did.\n"
+		}
+
+		"You can't really \Isee\i it from here, because it's transparent, but you're obviously under it due to the fact that there's wholesome oxygen
+		to breath. Wholesome, nutritious oxygen."
+	}
+}
+
+
+scenery oxygen "oxygen"
+{
+	nouns "oxygen"
+	article "the"
+
+	found_in Corridor1
+
+	long_desc
+	{
+		"You can't. But as your eyes aren't bugging out of your head, you know it's present."
+	}
+}
+
+
+object fake_key "fake key"
+{
+}
+
+
+object crowd01 "crowd"
+{
+	nouns "crowd" "line" "losers" "people"
+	adjective "queueing"
+	article "the"
+
+	is plural, hidden, living
+
+	in Corridor1
+
+	long_desc
+	{
+		"They are an assortment of people unfortunate enough to get trapped on Phobos, so your opinion of them can't help but be low. You recognize some of
+		them from your day-to-day encounters, but nobody stands out as someone you'd say hello to. They all seem to have spent the last nine hours playing
+		in sand, but that 's the norm for Phobos."
+	}
+	before
+	{
+		object DoTalk
+		{
+			"You'd rather not get involved with the crowd and their laundry list of problems."
+		}
+	}
+}
+
+
+scenery sand "sand"
+{
+	nouns "sand" "rocks" "rock" "dust"
+	adjective "moon" "dusty" "sandy" 
+	article "the"
+
+	is plural
+	in Corridor1
+
+	long_desc
+	{
+		"Phobos is a C-type carbonaceous asteroid, and eons of rock have been pulverized, creating a three-foot mound around the moon. This has been cleared away 
+		by the engineers, but it's still sandy and dusty outside."
+	}
+	before
+	{
+		object DoGet
+		{
+			"The idea repulses you. Familiarity with it has bred much contempt. "
+		}
+	}
+}
+
+
+object jacket "jacket"
+{
+	nouns "coat" "jacket" 
+	adjective "emerald" "winter" "green"
+	article "you"
+
+	is clothing, worn
+
+	capacity 2
+
+	long_desc
+	{	
+		"Your jacket is an old, emerald winter coat that has been in your family for twenty years. It's not particularly warm, the hoodie is matted down with 
+		some kind of mystery gunk and it weirdly billows into an unflattering Christmas tree shape when worn."
+	}
+}
+
+
+scenery table01 "tables"
+{
+	nouns "counter" "tabletop" "table" "bench" "board" "counter" "pulpit" "sideboard" "tables"
+	adjective "front" "gray"
+	article "your"
+
+	is platform, static, open, plural
+
+	in StripClub
+
+	capacity 10
+
+	long_desc
+	{
+		"You try not to think of all the nefarious encounters that have taken place on this table - you don't want to accidentally wood yourself up here."
+		
+	}
+}
+
+
+object red_keycard "red keycard"
+{
+	nouns "keycard" "card"
+	adjective "red"
+	article "a"
+
+	in Raif
+
+	long_desc
+	{
+		"It's a cheap piece of red plastic with a transmitter or signal attractor inside. It's the size of an index card,
+		albeit a little thicker."
+
+		self.article #1 = "the"
+	}
+
+}
+
+
+object sticker1 "unflattering sticker"
+{
+	nouns "sticker"
+	adjective "unflattering"
+	article "an"
+	is readable
+
+	long_desc
+	{
+		"A most unflattering sticker to potentially have affixed to you, regardless of species or model number."
+	}
+	before
+	{
+		object DoAffix
+		{
+			if xobject is living
+			{
+				"A bad experience with a 'KICK ME' sign, bus driver and fifth of the ole Johnny Dapper left
+				an unforgettable mark on you regarding this sort of thing."
+			}
+			else
+			{
+				"You can't do that."
+			}
+		}
+	}
+}
+
+
+object wallet "wallet"
+{
+	nouns "wallet"
+	article "your"
+
+	in Chmod
+
+	money 105
+
+	long_desc
+	{
+		"It's a nigh-weightless piece of folded-over plastic. It's got an invisible chip in it that lets vendors do 
+		transactions with it wirelessly.\n"
+
+		"You have ";
+		print number wallet.money;
+		" Phobian scrip."
+	}
+	before
+	{
+		object DoWave
+		{
+			if parent(Player) = Corridor2 and self is known
+			{
+				DoBuyMembership()
+			}
+			else
+			{
+				"Nothing happens."
+			}
+		}
+	}
+}
+
+
+scenery curtains "curtains"
+{
+	nouns "curtains"
+	article "the"
+
+	is plural, openable 
+
+	found_in Corridor2 StripClub
+
+	long_desc
+	{
+		"They're thick and inviting and would make terrific bed covers. Cloth of this quality is tough to get on Phobos."
+	}
+} 
+
+
+object uncomfy_stool "uncomfortable stool"
+{
+	nouns "stool"
+	adjective "uncomfortable"
+	article "the"
+
+	in StripClub
+
+	is platform, enterable, transparent
+
+	initial_desc
+	{
+		"\nThere is a lone stool available for you to sit on. Luckily, it's next to \IScarlett.\i"
+	}
+
+	long_desc
+	{
+		if player not in self
+		{
+			"Just going out on a limb, but it's sure to be extremely uncomfortable to sit upon."
+		}
+		else
+		{
+			"It's like a giant caltrop for your posterior."
+		}
+	}
+	before
+	{
+		object DoGet
+		{
+			"No need to start getting grabby."
+		}
+
+		object DoExit
+		{
+			if Scarlett2.hitpoints < 0
+			{
+				"You try, but the surging crowd immediately pushes you back down."
+			}
+			else
+			{
+				"If you leave your stool there's a good chance that somebody would figuratively or literally steal it."
+			}
+		}
+	}
+}
+
+
+scenery patter "patter"
+{
+	noun "patter" "hipster" "dj" "deejay"
+	article "hipster's"
+	
+	is static 
+
+	in StripClub
+
+	long_desc
+	{
+		"It's not really something you can look at."
+	}
+	before
+	{
+		object DoListen
+		{
+			"Although the club makes thousands in scrip each evening, the hipster deejaying the event is desperately trying to intimidate
+			every person in the club to fork over more money. His part is humiliating, though he obviously couldn't care less."
+		}
+	}
+}
+
+scenery club_music "music"
+{
+	noun "music" "song" "songs"
+	article "the"
+
+	is static
+
+	in StripClub
+
+	long_desc
+	{
+		"It's not THAT bad."
+	}
+	before
+	{
+		object DoListen
+		{
+			"In an effort to 'break all the rules,' a movement in electronic music began several years ago centered around ignoring the basic elements of 
+			songcraft, such as listenable chords and key. This trend drove thousands of people with perfect pitch off Earth, leading towards
+			a housing boom on moons with no atmosphere. The particular endless, banshee's keen you're hearing tonight is hardly discernable
+			from a pair of generous buttocks sitting upon a low-end Roland, excepting its hard-rocking beat."
+		}
+	}
+}
+
+
+scenery poles "poles" 
+{
+	noun "poles" "pole" "column" "columns"
+	article "the"
+
+	is plural
+
+	in StripClub
+
+	long_desc
+	{
+		"They are thin and transparent, and disappear into a foggy nothingness at the top of the stage. 
+		The bubbles inside them reflect the various stage lights in an unmistakeably pleasing way 
+		off the nude female form."
+	}
+}
+
+
+scenery poles02 "poles" 
+{
+	noun "poles" "pole" "column" "columns"
+	article "the"
+
+	is plural
+
+	in NewStripClub01
+
+	long_desc
+	{
+		"They are thin and transparent, and used to disappear into a foggy nothingness at the top of the stage
+		when this place was still open." 
+	}
+}
+
+
+scenery stage "stage"
+{
+	nouns "stage" "platform" "platforms"
+	article "the"
+
+	found_in StripClub NewStripClub01
+
+	long_desc
+	{
+		"Highly polished Formica; how the girls dance upon it without slipping and wrecking their knees is beyond you. Kangaroo's reconstructive knee insurance premiums must be astronomical."
+	}
+}
+
+
+object couch01 "couch"
+{
+	noun "couch" "sofa"
+	article "your"
+
+	is enterable, platform, transparent, static, hidden
+
+	in Office
+
+	long_desc
+	{
+		"Your couch is glazed-over powdered moon dust, upon which is three tied-together cushions."
+
+	}
+}
+
+
+scenery commotion "commotion"
+{
+	nouns "commotion" "confusion" "annoyance" "ballyhoo" "bedlam" "scene" "brouhaha" "donnybrook" "fuss" "hubbub" "hurly-burly" "pandemonium" "racket"
+	adjective "big"
+	article "the"
+
+	is living
+
+	long_desc
+	{
+		if Taft.hitpoints > 0
+		{
+		"You strain your neck, slightly concerned, but figure that security will handle it. They wouldn't let you in here without proper ID and is there anything
+		rarer on Phobos than a red keycard? Besides, you usually get yelled at if your eyes aren't directly focused on the stage in these kind of places.
+		It's Pavlovian."
+		}
+		else
+		{
+			"As bad as the confusion was before, it's become much, much worse."
+		}
+	}
+	before
+	{
+		object DoInvestigate
+		{
+			"Looks like some blot of space sputum wearing a hooded sweatshirt and a dour expression is trying desperately to get in here. All this effort and
+			as soon as he figures out why \ITaft\i is in town and he'll be trying to leave twice as hard."
+		}
+		object DoHit
+		{
+			"That's what Mr Kangaroo hired Security for."
+		}
+		object DoTalk
+		{
+			"You're not the kind of guy to get involved. He probably didn't even have a keycard!"
+		}
+	}
+}
+
+
+scenery chessset "chess set"
+{
+	noun "set" "table"
+	adjective "chess"
+	article "your"
+
+	is platform
+
+	in Office
+
+	long_desc
+	{
+		"Your father gave you this set when you were thirteen.  Chess is the reason you ever set foot on Phobos in the first place -- you played at tournaments
+		all over the solar system and usually placed well enough to stave off selling your knee ligaments for scrip. The current board reflects your efforts to teach
+		\B\IJoe \i\b how to play. He has arranged his pieces in a frowny face, which, while not technically a series of legal chess moves, certainly speaks volumes
+		on life these days, as chess is wont to do."
+	}
+}
+
+
+scenery minifridge "mini-fridge"
+{
+
+	noun "fridge" "mini-fridge" "refrigerator"
+	adjective "mini"
+	article "your"
+
+	is container, openable, not open 
+
+	capacity 50
+
+	in Office
+
+	long_desc
+	{
+		"It keeps things reasonably cold, though being mere kilometers from the vast emptiness of space has always made it 
+		seem kind of redundant in your mind."
+	}
+	before
+	{
+		object DoOpen
+		{
+			"The food you consumed on Earth a few days ago has turned you off to even the thought of Phobian delights forever. Everything here 
+			just tastes... dusty. It repulses you."
+		}
+	}
+}
+
+
+SuperContainer desk01 "desk"
+{
+	noun "desk"
+	adjective  "rock"
+	article "your"
+
+	in Office
+
+	is hidden
+
+	long_desc
+	{
+		phone is not hidden
+		
+		"Rudimentary construction sprang forth from the natural resources on Phobos, though it all seems rather samey due to the fact that
+		there's really just ice and rock around. ";
+
+		if self is not special
+		{	
+			 self is special
+
+			"\I\BJoe\i\b once said that the desk resembled something in the style of Francis Jourdain,
+			but he could hardly tell you the difference between France and Jordan or Ron Francis and Michael Jordan in his usual mental state.";
+		}
+
+		""
+	}
+	before
+	{
+		object DoOpen
+		{
+			"It's actually not all that nice a desk, and the humidity has caused it to no longer be openable."
+		}
+
+		object DoGet
+		{
+			"You pick it up to prove that you can do it and then set it back down due to its bulk."
+		}
+	}
+}
+
+
+object phone "phone"
+{
+charnumber 90
+
+	noun "phone" "cell"  "communicator"
+	adjective "cell"
+	article "your"
+
+	is not special, hidden, living
+
+	
+! on the desk, but need to MoveOnto to get it there
+
+	long_desc
+	{
+		self is not hidden
+
+		"It is a sleek, black communications device, nothing special. It's completely voice activated, making it easy to get messages."
+
+		if self is special
+		{
+			CheckPhoneMessages()
+		}
+	}
+	before
+	{
+		object DoTalk
+		{
+			GetMessages()
+		}
+	}
+}
+
+
+scenery mailbox "mailbox"
+{
+	noun "mailbox" "g09" "box"
+	adjective "g09" "mail"
+	article "your"
+
+	is container, openable, not open, lockable,  not locked 
+
+	in StairWell06
+
+	long_desc
+	{
+		"Your mailbox, G09, is like all the others, except yours has no carved profanity."
+	}
+
+}
+
+scenery mailboxes "mailboxes"
+{
+	noun "mailboxes"
+	article "the"
+
+	found_in StairWell01 StairWell02 StairWell03 StairWell04 StairWell05 StairWell06
+
+	is container, openable, not open, lockable, not locked
+
+	key_object fake_key
+	
+	long_desc
+	{
+		"You shudder at what might be in the other citizen's mailboxes. Surely, nothing advantageous."
+	}
+}
+
+
+object vial "vial"
+{
+	noun "vial" "fluid" 
+	adjective "small"
+	article "a"
+	
+	is container, not openable,  edible
+
+	in mailbox
+
+	long_desc
+	{
+		"The note attached to the vial indicates that it contains liquid computer code that will allow the recipient to determine the identity of pantomimes
+		simply by looking at them."
+
+		vial.article #1 = "the"
+
+	}
+
+	before
+	{
+		object DoEat, DoDrink
+		{
+			"You throw your head back and ingest the code. You don't feel a thing, but the components of the thick liquid race to configure additional
+			functionality to the small microchip  implanted within your spine. Here's hoping it wasn't anything malicious! (Not that it's much of
+			a problem if it is -- five minutes in front of a spinal logic analyzer will allow you to reset your chip to its previous condition.) Now all you
+			need is to have a pantomime pass before you to ensure that it works."
+
+			remove self
+
+			Raif is Chip01_Seeing_Mimes
+		}
+
+		object DoOpen
+		{
+			"Oh, don't be so tedious. Just say 'drink fluid.'"
+		}
+	}
+}
+
+
+scenery desk02 "desk"
+{
+	noun "desk"
+	adjective "oak"
+	article "the"
+
+	in StripOffice01
+
+	long_desc
+	{	
+		"The desk is solid oak. It would have taken a small fortune to get it to Phobos, where oak does not naturally occur."
+	}
+}
+
+
+scenery carpet01 "carpet"
+{
+	noun "carpeting" "carpet"
+	adjective "tiger-striped" "tiger" "striped"
+	article "the"
+
+	in StripOffice01
+
+	long_desc
+	{
+		"Upon closer inspection, it's the sewn-together skin of several large tigers. Kangaroo is the kind of guy without a soul."
+	}
+}
+
+
+scenery stripphotos "photographs"
+{
+	nouns "photos" "photographs" "pictures" "shots"
+	adjectives "hanging" "framed"  "face"
+	is plural 
+
+	found_in StripOffice01 KangarooOffice2
+
+	long_desc
+	{
+		if self is not special
+		{
+			self is special 
+
+			"You take a closer look at the photographs to see exactly who is depicted. The first one is a famous picture of a baseball player named Johnny Bench. 
+			He played for the Cincinatti Reds seventy years ago. Johnny is holding up a kid's letter asking him if it's true that he can hold seven baseballs
+			at one time in his left hand, and seven baseballs in his right hand. You don't recognize anyone else, but there's about six
+			other pictures, an equal mix of white and black men. "
+		}
+		else
+		{
+			"The only picture you recognize is a famous photo of a baseball player named Johnny Bench. He played for the Cincinatti Reds seventy years ago. 
+			Johnny is holding up a kid's letter asking him if it's true that he can hold seven baseballs at one time in his left hand, and seven baseballs in his 
+			right hand. You don't recognize anyone else, but there's about six other pictures, an equal mix of white and black men. "
+		}
+	}
+}
+			
+
+object console "console"
+{
+	noun "console"
+	adjective "receptionist's"
+	article "the"
+
+	in Morgue01
+
+	is platform, static, quiet, hidden
+
+	long_desc
+	{
+		"It is one of the endless ashen pieces of furniture found in every upright building. It does not appear to have been used in quite some time."
+	}
+}
+
+
+object magazines "magazines"
+{
+
+	nouns "magazine" "magazines" "chessman" "highlights" "newspaper"
+	adjective "group" "modern" 
+	article "the"
+
+	is plural, readable
+
+	in morgue_table01
+
+	long_desc
+	{
+		GameEvents[14] = 1
+
+		"You thumb through the magazines and see the usual collection of waiting room fare. 'Highlights... for Children'... 'Which Car?'... 'The Phobos Daily
+		Times-Tattler'... you throw the stack down as you see the last one. It's the February 2044 issue of 'Modern Chessman,' the one where you are on the cover
+		and the subject of the feature interview inside. You were really hoping that you'd live the rest of your life never seeing it again."
+	}
+	before
+	{
+		object DoGet
+		{
+
+			GameEvents[14] = 1
+
+			"You thumb through the magazines and see the usual collection of waiting room fare. 'Highlights... for Children'... 'Which Car?'... 'The Phobos Daily
+			Times-Tattler'... you throw the stack down as you see the last one. It's the February 2044 issue of 'Modern Chessman,' the one where you are on the cover
+			and the subject of the feature interview inside. You were really hoping to live the rest of your life never seeing it again."
+		}
+	}
+
+}
+
+
+scenery rupture_warning "rupture warning"
+{
+	nouns "rupture" "warning" "sign"
+	adjectives "bubble"
+	article "the"
+
+	parse_rank 10 
+
+	in Alley01
+
+	long_desc
+	{
+		"These kinds of signs are usually badly out of date, thus negatively affecting the commuting schedules of the populace. But because 
+		the endgame for ignoring a rupture warning is asphyxiation, it's best to play it safe. "
+	}
+}
+
+
+object morgue_table02 "examination table"
+{
+	nouns "table"
+	adjective "exam" "examination"
+	article "the"
+
+	in Morgue03
+
+	is platform, static, quiet, hidden 
+
+	long_desc
+	{
+		"Rather disgustingly scabbed over with the blood of a hundred different guys who met their unfortunate ends on Phobos."
+	}
+}
+
+
+scenery morgue_blood "blood"
+{
+	nouns "blood"
+	article "the"
+
+	in Morgue03
+
+	is quiet, hidden
+
+	long_desc
+	{
+		"It's everywhere. It gets in everything. It's like you're expected to shed some just by walking around down here.
+		Chmod will probably shoot some from his LED at some point."
+	}
+}
+
+
+object morgue_table01 "table"
+{
+
+	nouns "table"
+	adjectives "waiting" "room" 
+	article "the"
+
+	is platform, hidden
+
+	in Morgue01
+
+	long_desc
+	{
+		"It's real attractive for a waiting room table. Is that real carbonite? Impressive!"
+
+	}
+	before
+	{
+		object DoGet
+		{
+			"It's too heavy."
+		}
+	}
+		
+}
+
+
+object  Slab01 "first slab"
+{
+! Slab for Alexei
+
+	nouns "slab" "first" "chamber" "tray" "two" "chambers" "slabs"
+	adjective "active" "first" "number"
+	article "the" 
+
+	is container, openable, not open, quiet, static, hidden, not transparent
+
+	capacity 10
+
+	in Morgue03
+
+	long_desc
+	{
+		"The slab is just over two meters long, one and a half meters tall. It's  designed to allow a competent medical technician to
+		comfortably perform an autopsy without all the bother of moving the body, in order to save space at this facility.\n"
+
+		if self is open
+		{
+			"The first slab is open. \n"
+
+			WhatsIn(self)
+		}
+		else
+		{
+			"The first slab is closed."
+		}
+	}
+
+}
+
+
+object Slab02 "second slab"
+{
+! Slab for Taft
+
+	nouns "slab" "second" "chamber" "two" "chambers" "slabs"
+	adjective "active" "second" "number"
+	article "the" 
+
+	is container, openable, not open, quiet, static, hidden, not transparent
+	capacity 10
+
+	in Morgue03
+
+	long_desc
+	{
+		"The slab is just over two meters long, one and a half meters tall. It's  designed to allow a competent medical technician to
+		comfortably perform an autopsy without all the bother of moving the body, in order to save space at this facility.\n"
+
+		if self is open
+		{
+			"The second slab is open. \n"
+
+			WhatsIn(self)
+		}
+		else
+		{
+			"This slab is closed."
+		}
+	}
+}
+
+
+object Slab03 "third slab"
+{
+! Slab for nothing 
+
+	nouns "slab" "third" "chamber" "tray" "three" "chambers" "slabs"
+	adjective "active" "third" "number"
+	article "the" 
+
+	is container, openable, not open, quiet, static, hidden, not transparent
+	capacity 10
+
+	in Morgue03
+
+	long_desc
+	{
+
+		"The slab is just over two meters long, one and a half meters tall. It's  designed to allow a competent medical technician to
+		comfortably perform an autopsy without all the bother of moving the body, in order to save space at this facility.\n"
+
+		if self is open
+		{
+			"The third slab is open. \n"
+			WhatsIn(self)
+		}
+		else
+		{
+			"This slab is closed."
+		}
+	}
+}
+
+
+scenery alexei_eyelids "eyelids"
+{
+	part_of Alexei
+
+	nouns "eyelids" "lids" "lid"
+	adjective "eye" 
+	article "Alexei's"
+
+	is static, container, openable, not open, not transparent, plural
+
+	capacity 1
+
+	long_desc
+	{
+		if self is open
+		{
+			"They are open."
+
+		}
+		else
+		{
+			"They are closed."
+		}
+	}
+}
+
+
+scenery alexei_eyes "eyes"
+{
+	part_of Alexei
+
+	nouns "eyes" "eye"
+	adjectives "body's" "alexei's"
+	article "Alexei's"
+
+	is static, plural
+
+	size 1
+
+	long_desc
+	{		
+
+		if alexei_eyelids is not open
+		{
+			"You can't see them - this guy's eyelids are shut."
+		}
+		else
+		{
+			if GameEvents[16] = 0
+			{
+				GameEvents[16] = 1
+				SetQuip(10,19,1)				
+			}			
+
+			"They have been gouged out, and roughly at that. Tender, crimson concaves of flesh are all that remains."
+
+			if GameEvents[19] = 0
+			{
+				SetQuip(10,22,1)
+			}
+
+			GameEvents[19] = 1
+
+			GameEvents[23] = 1
+			
+		}
+	}
+}
+
+
+scenery big_board "big board"
+{
+	nouns "board" "menu"
+	adjective "big"
+	article "the"
+
+	in Diner
+
+	is readable
+
+	long_desc
+	{
+		"It is a museum of the foulest food in the solar system. The lining in the silver cloud of Phobos's destruction has been found."
+	}
+}
+
+
+object booth "corner booth"
+{
+	nouns "booth" "table" 
+	adjective "corner"
+	article "the"
+
+	in Diner
+
+	is static, enterable, hidden
+
+	capacity 100
+
+	long_desc
+	{
+		"It's just a cheap, pressboard corner table, within speaking distance of the bar."
+	}
+}
+
+
+object chmod_cap "cap"
+{
+	nouns "cap" "hat"
+	adjectives "blue" "jays" "baseball"
+	article "Chmod's"
+
+	in Chmod
+
+	is clothing, quiet
+
+	long_desc
+	{
+		"It's a blue and white, fitted hat with one of the less repugnant of the many Toronto Blue Jays logos 
+		on the front. "
+	}
+
+	before
+	{
+		object DoGet
+		{
+			"Stealing hats? How old are you? What next, hair pulling?"
+		}
+	}
+}
+
+
+object fence "fence"
+{
+	nouns "fence" 
+	adjective "fanged" "sharpened" "iron" "lengthy"
+	article "the" 
+
+	is static, hidden, quiet
+
+	found_in Street04 Before_Mansion
+
+	long_desc
+	{
+		"As tall as three men who have shaven to a point their incisors and just as deadly."
+	}
+	before
+	{
+		object DoOpen
+		{
+			"There does not appear to be a way to open the fence, in fact. No keyhole, no locking mechanism... it simply surrounds the house
+			in a completely uniform manner from the ground up. Truly, massive architectural forces are at work here in the exact opposite
+			way that Phobos's mass isn't."
+		}
+		object DoJumpOver, DoJump
+		{
+			if parent(player) = Street04
+			{
+				"The low gravity on Phobos makes jumping over the fence ridiculously easy. It was installed just to create an aura of pretentiousness, anyway."
+
+				MovePlayer(Before_Mansion)
+			}
+			else
+			{
+				"You jump over the fanged fence and land safely on the other side..."
+
+				MovePlayer(Street04)
+			}
+		}
+
+		object DoClimb
+		{
+			"The fanged fence is too slick to touch and make any progress."
+		}
+		object DoPush, DoMove
+		{
+			"The fence is very effective at keeping people out when you come at it that way."
+		}
+		object DoHit
+		{
+			"Beating the fence, with words or fists, is not the way to get over your difficulty with it."
+		}
+	}
+}
+
+
+object panel "panel"
+{
+	nouns "panel"
+	adjective "flat" "tin"
+	article "the"
+
+	is quiet, hidden
+	in Airlock
+
+	long_desc
+	{
+		"It is a simple, flat rectangle that is presumably the control panel for the airlock. There is no discernible path or method into its inner components."
+
+	}
+	before
+	{
+		object DoListen
+		{
+			"It's ticking, which is fairly nefarious and mean-spirited of Mr Kangaroo."
+		}
+		object DoGet
+		{
+			"It's bolted firmly in place."
+		}
+	}		
+}
+
+
+object boulder "boulder"
+{
+	nouns "boulder" "rock"
+	adjective "massive"
+	article "the"
+
+	in Alley03
+
+	long_desc
+	{
+		"Easily pushing a thousand kilograms, it was diabolically hand-picked by Mr Kangaroo to stop you from ever 
+		escaping Phobos alive."
+	}
+	before
+	{
+		object DoGet
+		{
+			if self is not special
+			{
+				self is special
+
+				"You lift it up and toss it to the side. Kangaroo apparently had no idea that the weak gravity generators 
+				installed upon Phobos makes the prospect of a room-sized boulder 93% less daunting than it otherwise
+				would be. "
+			}
+			else
+			{
+				"There's no need to mess around with the boulder at this point."
+			}
+		}
+		object DoMove, DoPush, DoPull
+		{
+			"There is not enough physical room in the tunnel to just move it out of the way by pushing or pulling it."
+		}
+
+	}
+}
+
+
+scenery drapes "drapes"
+{
+	nouns "drapes" "curtains"
+	article "the"
+
+	found_in StripOffice01 KangarooOffice2
+
+	is plural, openable, not open 
+
+	long_desc
+	{
+		"They are some of the thickest, heaviest drapes you have ever seen in your life. They look practically lead lined."
+
+		if self is open
+		{
+			"\nThey are open."
+		}
+		else
+		{
+			"\nThey are closed."
+		}
+	}
+	before
+	{
+		object DoOpen, DoPull
+		{
+			if self is not open
+			{
+				self is open
+
+				"You open the drapes.\n"
+
+				"\"Hey! Stop that!\" says Mr Kangaroo."
+
+				if Chapter = 5
+				{
+					Activate(Kang_Drapes)
+				}
+			}
+			else
+			{
+				"They are already open."
+			}
+		}
+	}
+}
+
+
+scenery office_window "window"
+{
+	noun "window"
+	article "the"
+
+	found_in StripOffice01 KangarooOffice2
+
+	is transparent
+
+	long_desc
+	{
+		if drapes is open
+		{
+			"The window takes up the majority of the northern wall. The drapes are kept closed, presumably, due to the ghetto conditions you can
+			see quite clearly when peering outside."
+
+			if Chapter = 5
+			{
+				Activate(Kang_Drapes)
+			}
+		}
+		else
+		{
+			"You'll have to open the drapes first."
+		}
+	}
+}
+
+
+object pistol "pistol"
+{
+ammo 1
+
+	nouns "pistol" "gun" "revolver" "weapon" "handgun"
+	article "the"
+
+	!in Raif2
+
+	long_desc
+	{
+		"It is an empty handgun that fires off very deadly bullets."
+	}
+	before
+	{
+		object DoShoot
+		{
+			"There's been enough violence."
+		}
+		object DoGet
+		{
+			if Raif2.hitpoints > 0
+			{
+				"\IRaif\i avoids your clumsy attempt at theft."
+			}
+			else
+			{
+				"You pick up the gun."
+				move self to player
+			}
+		}
+	}
+}
+
+
+scenery body_parts01 "body parts"
+{
+	nouns "parts" "thigh" "thighs" "eye" "eyes" "abs" "pack" "hands"
+	adjective "body" "fake" "six" 
+	article "Kangaroo's"
+
+	is static, hidden, quiet, plural
+
+	long_desc
+	{
+		"They have been harvested from various pantomimes that Mr Kangaroo got a hold of... and he seems intent on telling you about each one."
+	}
+	before
+	{
+		object DoGet
+		{
+			"Kangaroo has loosely applied them to his person, but you still can't get close enough to grab anything."
+		}
+	}
+}
+
+
+scenery raif2_blood
+{
+	noun "blood"
+	article "the"
+
+	is quiet, hidden
+
+	long_desc
+	{
+		"Enough left your pantomime's body to single-handedly change what people will think of when they hear the term 'The Red Planet.'"
+	}
+}

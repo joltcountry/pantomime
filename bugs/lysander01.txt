@@ -1,0 +1,241 @@
+inpassinggod: oh noes
+inpassinggod: SOrry, was eating dinner.
+knightorc: You do not have to apologize!!!
+inpassinggod: I'm sorry I appologized.
+knightorc: ^____^
+inpassinggod: wannna cybar?
+knightorc: Jesus, man!
+inpassinggod: ^_____________________________________________________________________^
+inpassinggod: Um.
+inpassinggod: Was zipping one 100-kilobyte file really necessary?
+knightorc: I thought it was for the best.
+knightorc: Sometimes, .hex files are blocked by ISP because they contain ASSEMBLLEEYYYY
+knightorc: Or maybe not. 
+inpassinggod: Oh, okay. Well, mine doesn't.
+inpassinggod: Anyway, do you want me to send you my observations as a script file or just tell you here and now?
+inpassinggod: I figure hte later's better because it's small.
+knightorc: You know what, if you want to just tell me, that'd be awesome. I can fix it in real time!!!
+inpassinggod: Sweet.
+knightorc: You're the fockin' MAN to help me out like this, by the way.
+knightorc: I really do appreciate it. 
+inpassinggod: Sure, no problem.
+inpassinggod: Did oyu see what I said on the MUDdurring the xyzzys?
+inpassinggod: "I'd just like to mention that every single game I've betatested has gone on to win several different awards."
+knightorc: hahah
+knightorc: Good point!
+inpassinggod: (I don't, as a rule, count Gamlit, as I only tsetd like a quarter of it.)
+inpassinggod: But yeah. Drift, sting of the Wasp, and Distress.
+inpassinggod: (Which I, to be honest, wasn't that thrilled with. Distress I mean.)
+knightorc: Yeah, I still have to completely play Distress. I owe Merk that much for all his help and good cheer. I have a laundry list of things to catch up on the minute after I submit this game to the Spring Thing guy.
+inpassinggod: It's a great mindfuck concept, but I think it woudl ahve been done much better as a straight up pros story.
+inpassinggod: Yeah, like uploading my X-Men review! ^____^
+inpassinggod: Er, Wing Commander. Dammit.
+inpassinggod: I shoudl write up  one for Destroy All humans! I've played it so fucking much.
+knightorc: Exactly -- these are the sorts of things I will be able to accomplish.
+inpassinggod: Buutiiful.
+inpassinggod: It's Adam who does spring thing, right?
+knightorc: He used to, but now it is this guy called Greg Boettcher.
+inpassinggod: Ah.
+inpassinggod: He sounds like a prick. I hate him.
+inpassinggod: Just from hearing his name. I'm making snap judgements for no real rason.
+inpassinggod: Really, I'm sure that Bulcher is a kind, understanding soul who likes cute fluffy kittens.
+knightorc: Geez! 
+knightorc: You HATE him!?
+inpassinggod: Yeah, it's the trendy thign to do don'tchaknow.
+inpassinggod: Argh, thsi is irritating.
+inpassinggod: For soem strange reason, it doens't want to read for me.
+knightorc: Sonofa!!
+inpassinggod: So I"m using the TTS thing in Hugo.
+knightorc: Nooo!
+inpassinggod: Note to Kent:
+inpassinggod: Put a fucking rate control in.
+inpassinggod: I can read, it's just very slow. And that irritates me.
+inpassinggod: iT does not like being itritated.
+knightorc: What a time for JC to be down, SON OF A 
+inpassinggod: Ow.
+inpassinggod: I'llsay this though.
+inpassinggod: Listening to the speech is damn funny.
+knightorc: heh, thanks man
+inpassinggod: The gentlemen's club is not implamented as a scenery object outside the club.
+knightorc: Yeah, I tend to not do that for my games. FoD was like that throughout. 
+knightorc: I should probably change that.
+inpassinggod: You should probably change that.
+inpassinggod: I dunno, you dont' erally need to.
+inpassinggod: I just find it fun. It's an excuse for more Sherwinian pros! ^__^
+inpassinggod: Also, no bulletproof window
+knightorc: Ah! Thank you!
+inpassinggod: How does the dude just look at amonitor to tell that you have no ca$$?
+knightorc: Everything is wireless in the future.
+inpassinggod: There's a difference between "wireless" and "implanted with an RFID tag."
+inpassinggod: I mean, if you don't *have* your wallet *with* you.
+inpassinggod: Does everyone have a "search out currency" button or something?
+knightorc: Yes, but your wallet is technically in the room.
+knightorc: In that room, I mean.
+knightorc: In someone in that room.
+inpassinggod: Right.
+inpassinggod: I just think it shoudl be soemthing like "Where's your wallet?" instead of "you dont' have any money."
+inpassinggod: The former suggests that he can't see your money, whereas the latter implies he's looked and found nothing.
+knightorc: Ah, right right. I understand.
+inpassinggod: f you type x girl it asks "which girl do you mean, Scarlet or Cinamon?"
+inpassinggod: This is bad if the player types x girl on teh turn before she says her name.
+knightorc: Crap! Thank you.
+knightorc: I am going to go jog for five minutes, be right back -- please write anything you think of into the window. 
+inpassinggod: Also, and i need to test this, is it possible to just walk right past the dude a t het kiosk by typing e? oR will he somehow stop you from entering?
+knightorc: Oh, no, you cannot do that -- if you type e, it shouldn't let you go there. Lemme check.
+knightorc: Right, it stops you
+inpassinggod: Oki.
+inpassinggod: "she clears her voice"?
+knightorc: haha, thanks
+inpassinggod: Platforms and stripper poles aren't implamented.
+inpassinggod: Neither are background dancing girls--and if oyu type "x dancing", it gets a description of Cinimon...
+inpassinggod: Which is bad, on teh turns she hasn't actually showed up.
+inpassinggod: As oyu get the somewhat odd response "she isnt' here."
+knightorc: Right on, thanks
+inpassinggod: ...I could also mention that there's no DJ, but that might be nitpicking. ^^
+knightorc: Really? I think you can listen to him, just not see him.
+inpassinggod: You can "listen to music."
+inpassinggod: Aaanyhoo, is there some sort of clever wordllay oyu can use to "x back of club"?
+knightorc: x commotion
+knightorc: 	nouns "commotion" "confusion" "annoyance" "ballyhoo" "bedlam" "scene" "brouhaha" "donnybrook" "fuss" "hubbub" "hurly-burly" "pandemonium" "racket"
+knightorc: I didn't do "back of club" though -- blast!!! 
+inpassinggod: *snickers*
+inpassinggod: That should go into the game somehow.
+knightorc: Heh
+inpassinggod: Like, into the credits section of the help file or something, that's funny.
+knightorc: OK, brb
+inpassinggod: "You switch to the same channels blah blah blah. >t scarlet. YOu can't think of anything ot say right now."
+inpassinggod: You get the same response when you "x confusion" after he gets shot as before. It's unintentionally amusing-- "Taft has just been shot. >xs commotion. You strain your neck, slightly concerned but figure security will handle it..."
+inpassinggod: "stage" and "fog/mist" are also unimplamented...
+inpassinggod: It's never explicitally stated that the second shot hits Scarlet.
+inpassinggod: Or that she's even injured, at all. Just that she's dead if you look at her. Which isn't necessarily going to happen by any means.
+inpassinggod: If the player doesn't sit on the stool before the shots, can he just leave?
+inpassinggod: This section is annoying and unnatural, becasue although the club may have colapsed into bedlum as far as the text is concerned, gameplaywise nothing really seems to have changed except that you can't stand.
+inpassinggod: Okay, so it's stated a couple of turns later that Scarlet dies. But still, it seems unnatural to me.
+knightorc: Yeah, I was hoping that Scarlett's death is quiet, possibly unnoticed and announced before the cut scene. 
+inpassinggod: Ah. That would be nice, yes.
+inpassinggod: The problem is that the player's first reaction upon seing the murders is probably to...
+inpassinggod: Talk to Scarlet about it.
+knightorc: Yes! And then the games says that she can't speak.
+knightorc: er, game says 
+inpassinggod: Because she's dead.
+inpassinggod: And then two turns later the vacuum cleaner says omg shes dead1111!
+knightorc: OK, that should change, yes
+inpassinggod: Actuallty, it says "Scarlet isn't in any positino to talk right now." Which kind of makes it seem like you already knw she's dead and the game's snarking you.
+inpassinggod: Why not just program in a custom response for that?
+inpassinggod: Like, "you turn to Scarlet, your mouth flopping open to make some sort of quip about hte mime's death--and then it just sort of hangs there like the last time you watched a mime of Anne Coulter speak."
+knightorc: Well, I like how the player goes, "What??" when that happens. 
+knightorc: It's a "special effect."
+knightorc: heh
+inpassinggod: And if the player "x"s Scarlet the nit jsut says "she is dead" and triggers teh description of her death and the cutscene.
+knightorc: OK, let me consider this one. The effect it's had on people has been good so far, but I understand what you are saying.
+inpassinggod: It looks like lazy programming. ^____^
+knightorc: I did change it so that Chmod does not "turn you around."
+inpassinggod: It makes me feel like I discovered her death before i was supposed to.
+inpassinggod: So it was like, my shocktaht she was dead was disipated by me thinking "Oh, man, bug."
+inpassinggod: And then when Schmod did his thing, it didn't have any effect.
+inpassinggod: "The phone is completely voice activated, making it easy to get messages YOur phone is blinking, indicating that oyu have a message. >t phone you can't don taht with the phone."
+knightorc: Yeah, that pisses me off. Gotta fix that.
+inpassinggod: SO hwo are oyu supposed to check messages?
+knightorc: listen to messages or get messages
+inpassinggod: Ah.
+inpassinggod: You can also >take phone, I dunno if that was an undocumented feature or what
+inpassinggod: .
+knightorc: Yeah, it's a cell phone. Dayna said the same thing -- she thought it was a static phone.
+inpassinggod: "x messages" confuses the game, heh.
+knightorc: whoa, OK
+inpassinggod: Ah. Well, "on the desk is your phone". Implies a "desk phone," don'tchaknow.
+inpassinggod: You could have him be playing hte phone.
+inpassinggod: I tried "check messages."
+inpassinggod: That might be wroth implamenting.
+inpassinggod: Er, you could have him *carrying* the phone.
+inpassinggod: Is what i meant to say back there.
+inpassinggod: The ofice does not list any exits.
+knightorc: Does "out" work?
+knightorc: oYes!
+knightorc: But, right
+inpassinggod: Probably.
+inpassinggod: You can't go west.
+inpassinggod: I mean, I know there's no reason to.
+inpassinggod: But oyu should at elast give some sort of desoltory message rather than cockblocking the player with no explanation at all.
+knightorc: Yeah, that's due to the deadline.
+knightorc: I think I did add that since you started playing.
+knightorc: Lemme check.
+knightorc: Right, added it. Word!
+inpassinggod: Ah, when is the deadline?
+inpassinggod: :: FINGERGUNS ::
+knightorc: 10:00 Mountain Standard Time tomorrow, heh
+knightorc: 10:00 am, I mean.
+inpassinggod: I see.
+inpassinggod: Heh.
+inpassinggod: Only in a Robb Sherwin game do you go "in" to go "out" of a building.
+inpassinggod: Only "your" mailbox is implamented.
+inpassinggod: And "box" and "mail" aren't synonamous with the mailbox.
+inpassinggod: ..."liquid computer code."
+inpassinggod: Genius. Pure genius.
+inpassinggod: You madcap crazy bastrard.
+inpassinggod: Yeah, is it really necessary to have a room for every stairwell? Why not just cut to the groudn floor, huh?
+inpassinggod: I mean, when you go >d from teh sixth floor, jsut type "you descend the stairway down to the ground floor." And be in the ground floor stairwell.
+knightorc: I do end up doing that later (not so much dicking around) but yeah... frigging deadline. 
+knightorc: :(
+inpassinggod: Ah.
+inpassinggod: I'm sorry i didn't test this sooner, I didn't realize the deadline was this close.
+inpassinggod: I like how this guy's apartment complex is right next door to a strip club.
+knightorc: Oh, I only had it 100% finished, for content, tonight. So you got it fresh!
+inpassinggod: W00+!
+knightorc: Yeah, it's why I call the game a "utopia" and not a "dystopia."
+inpassinggod: Badum tish!
+inpassinggod: So, like, that's all this guy can go?
+inpassinggod: Thjis poor little guy's world consists of his apartment complex, teh strip club, and the walkway between them?
+inpassinggod: (As well as the entireity of the planet Earth, which he's somehow managed to traverse.)
+knightorc: Yeah, Phobos is a little place!
+inpassinggod: So it seems.
+inpassinggod: YOu can go into the room and get "unfortuantely ther's no sign..." even though the player doens't necessarilly have to have checked the phone.
+inpassinggod: Especially considering you have to >x desk to see the phone in teh first place.
+inpassinggod: The scene when Magnolia arives when you have the code ingested needs some tweaking.
+knightorc: OK, what messes up?
+inpassinggod: "You recognize her from your previous visits but oyu never knew she was a pantemim. magnolia..." And then, later, "you recognize her from your pervious visits
+here, her stage name is Magnolia." Again.
+knightorc: OK, let me try to replicate that
+inpassinggod: It happens if oyu drink the vial before oyu see her.
+inpassinggod: It shoudl be "whatever went on in Mr. Kangaroo's office it must have put her in a fowel mood. You remember her from pervious visits although you never 
+knew she was a pantamime. Her stage name is "Magnolia."
+inpassinggod: And the description of her shoudl then probably be optional. Just so that you don't have to write a separate one for her if the player hasn't ingested the code.
+inpassinggod: "I drank some code..." seems alittle awkward after the "you and your robot make a great team." conversation.
+After seing the eyes, you have to >T Schmod , the only response to which is "He doesnt' ahve any eyes!~" Why not just instead make it so that he says this as soon as you viiew it the first time? Also so that htis happens when you open the eyelids. I think that'd make it smoother. 
+
+2: you can hear Schmod mention that the internet is unavailable on teh moon if you ask him about how come you've never seen the guy before. (I think that's where it is anyway.) This is unnatural in two ways; if you see it before you say "he doesnt 'ahve any eyes!" its' redundant; it's unnatural surprise when you seee it the second time, and if you see this after, it's redundant. Though that's not so big a deal. 
+
+y3: the Crendle street local just north of hte cloning center has a "obvious exits include" thing at the ind--is this intentional? Also, the description seems a little unclear on where Park Street actually IS. 
+
+Or maybe i"m just stupid. 
+
+4: there is no "cheatu" object. 
+
+5: Mrs. Kangaroo (why not miss? She's married, right?) has kind of an anticlimactic entrance, especiallly considering when you >x her, she's beaten up. May wanna give her some flava text there. 
+
+6: there is no #6. 
+
+7: "She is currently knocked out"? JUst unconscious. 
+
+8: I'm too lazy to check it, but can you go back to the club and see Kangaroo still in his office just before you go into market? Becasue if so, then there's logically no way he could get to the market witht you seing him pass you. 
+
+9: i check the cell phone now and see the message from Cin saying she would be late. But shouldn't it have rangif I was carrying the phone with me? 
+
+10: Where's my wallet? I konw I don't need it, but for hte sake of some internal consistancy, you'd think he'd carry it with him at al times. 
+
+11: okay, *mondo* guess the verb puzzle, here. Still, >t you works well enough, I suppose. How about >t parser ALso, you'd think that you shoudl be able to see the sun int eh room description. Considering you're in a transparent airlock and all. Might at least try to put hte hint there. 
+
+12:13: If you open the derapes and then close them, Kangaroo wil still close the already-closed drapes; editionally, if you >open drapes three or less turns before hte pulse and tehn close them, Kangaroo will "close" the drapes even thogh eh should be beating the shit out of everyone present at that moment. 
+
+14: I *assume* that that's supposed to be a deathflag, but i"m, like, still alive after that. 
+
+14: "venting your frustrations on Mr. Kangaroo won't ccomplish anything." Say what? 
+
+16: He goes through the whole "I don't feel so..." even if hteplayer hasn't opened the curtains on turn 1. It is a very amusing image, however; "Hey, what's going on? I don't feel so... RARRGH! KILLKILLKILL!" 
+
+18: >look-ing inside Kangaroo's office breaks mimisis very badly after he's dead. 
+
+18: the office doesn't have an exit. Or rather it does, but it's not listed. 
+
+1919: Again, the one response from >t scarlet, is it really necessary to include it as an option?
+

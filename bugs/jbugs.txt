@@ -1,0 +1,43 @@
+[6] I'm not sure why the names Scarlett, William Howard Taft, Mugabe, Joe Carter are in italics, unless they are potential to change. One of the "Joe"s isn't italicized and Joe is the only one bolded.
+[5] In the menu, "Hints" references Duffy.
+[7] Consistent use of either "shop-vac" or "shop vac".
+[15] Stupidest fawking nitpick I can muster: Statuslines for menu items aren't consistent. "Pantomime" and "Hints" aren't bolded. "Pantomime", "License and Copyright Information" and "About the Hugo Compiler" statuslines are the only ones in all caps.
+[2] Nitpick: Vac and shop-vac as synonyms for Mr Chmod.
+[23] PANTOMIME visible when examining Joe before drinking from the vial.
+[32] Also, "head" is a synonym for Cinnamon. Heh, "synonym for Cinnamon". 
+[33] "Who does that they party have left, Harding?" Omit "they".
+[4] "... drop into cx before speaking to you." in the response to choice 2 the first time speaking to Chmod. "Cx" is either an obscure reference I'm not catching, in which case leave it in, or a typo.
+[8]   >open door
+       You can't do that with the door.
+This could have a better response. "Only the doorman can do that", something along those lines.
+[9] You can talk to the doorman after he's opened the door asking to be let in.
+[24] Every stairwell has "your particular floor". 
+[28] Returning to club, the statusline is only "Kangaroo's". Don't know if this is intentional.
+[18] Generic message for "open fridge".
+[19] Not clear how to listen to message.
+[17] Phone not mentioned in description of room.
+[27] Nothing further north beyond club. 
+[11] The way south entirely disappears after you enter the actual club from the kiosk.
+[15] "In the dark" appears in statusline before "Outside Kangaroo's Midnight Gentleman's Club".
+[22] Going west in the stairwell puts you in the hallway.
+[20] In hallway, can't go west. No other apartments on floor. Wouldn't hallway go north and south? 
+[10] No response that I can tell for "listen to music" or "listen to hipster", "listen to patter". Don't need more than one description for either, just a general description of what it's like.
+[26] Exit not listed in first floor stairwell. Exit from stairwell by going northeast,  but return to it from alley by going south.
+[1] "Look up" while outside should give the description of the dome, and you should be able to examine the club from outside. Also, the door isn't mentioned until you trigger the doorman or try going north.
+[31] Can't enter Yterri Street or examine warning.
+[16] Projector not implemented. 
+
+
+- sit in booth before cinn is out of meeting, it says there is an empty booth in the corner and a lone robot working tonight
+
+
+[25] Better response for leaving stairwell on floors other than 6th.
+[3] Nitpick: Descriptions for components of Chmod, even if only the description already provided for Chmod himself. I just don't like it when there's something mentioned I can't even examine. I'd only appreciate separate descriptions for the baseball cap and the attachments on his back (which should probably return the same description for "x back" or "x attachments", with "mr" and "chmod's" as adjectives.).
+[12] Can't examine tables poles, stage, platform, microphone. Dammit, I need to see a doctor. I keep compulsively examining everything.
+[13] Again, blouse, skirt and headband could just return a description of Scarlett.
+[14] In Office, can't examine "sofa", "bubble", "table" or "chess table".
+
+[21] Can't "x mailboxes", only own mailbox.
+[29] Can't examine bar, stage or columns, column (make description plural, make synonyms "pole", "poles"). 
+[30] In Kangaroo's office, can't examine desks, heads, head shots or chairs.
+

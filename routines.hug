@@ -1,0 +1,310 @@
+!this lets me start the game someplace
+
+routine Test_Start(chap_to_start)
+{
+	Switch_Chapter(chap_to_start)
+	moveplayer(alley01)
+}
+
+
+routine Test_Morgue
+{
+	Switch_Chapter(2)
+	moveplayer(Street01)
+
+	 GameEvents[10]= 1
+	 GameEvents[11] = 1
+	 GameEvents[12] =1
+	 GameEvents[13] =1
+ }
+
+ routine Test_Mansion
+ {
+	Switch_Chapter(2)
+	Switch_Chapter(4)
+	GameEvents[30] = 1
+	moveplayer(Before_Mansion)
+	move phone to Raif
+	
+}
+
+
+routine DoVersion
+{
+	color YELLOW
+	print "\BPantomime\b"
+	color TEXTCOLOR
+	print "Interactive Fiction"
+	print "Copyright (c) 2006. Written and programmed by Robb Sherwin"
+	print "Release 1.02 / Serial number 060426 / Hugo 3.1\n"
+
+}
+
+
+routine CPronoun(obj)
+{
+	AssignPronoun(obj)
+
+	if obj.pronoun
+		print capital obj.pronoun; " ";
+	else
+		print capital obj.name;
+}
+
+
+routine Joe_Knocks_Clone
+{
+	move Joe to location
+	Joe is not asleep
+
+	"\nThe sound of the siren becomes nigh deafening... And out of the corner of your eye, at the kind of speed obtainable only by a professional athlete, \B\IJoe\b\i emerges from seemingly nothingness,
+	just like you taught him to do at the sound of the siren. He knocks over \IRaif\i in an attempt to give him a giant, full-bodied bear hug, as he had done to you numerous times. \n"
+
+	"\B\IScarlett\b\i, free, runs to you, enveloped in your arms where your pantomime can't hurt her.\n"
+
+	"Your pantomime brings the gun to his mouth and squeezes the trigger. His head boils away, covering \B\IJoe\b\i with what, from here, seems to be about a million quarts of blood."
+
+	! Set a quip for Scarlett3
+	SetQuip(4,1,0) ! not trembling any more 
+	SetQuip(4,2,1)
+
+	Raif2.hitpoints = -101
+	pistol.ammo = 0
+	move pistol to location
+	move raif2_blood to location
+
+
+}
+
+replace DoAsk
+{
+	"\B[Use \I'talk to character'\i to communicate with other people in the game.]\b"
+}
+
+
+replace DoAskQuestion
+{
+	"\B[Use \I'talk to character'\i to communicate with other people in the game.]\b"
+}
+
+
+replace NewOMessages (obj, num, a, b) 
+{ 
+    local retval = false 
+    select obj 
+    case direction 
+    { 
+        select num 
+        case 1 { 
+            if (self = u_obj) { 
+                run sky.long_desc 
+                retval = true 
+            } 
+        } 
+    } 
+    return (retval) 
+} 
+
+
+routine DoAffix
+{
+	"You can't do that."
+}
+
+
+routine DoBuy
+{
+	"That's not for sale."
+}
+
+
+routine DoBuyMembership
+{
+	if  (parent(Player) = Corridor2)
+	{
+		if wallet not in Raif
+		{
+			if GameEvents[5] = 0
+			{
+				GameEvents[5]  = 1
+				SetQuip(10,7,1)
+			}
+			
+			"The old guy looks at his monitor and it pisses him off for some reason. \"You got no money on you! No money, no
+			membership, dat's how it works, duh!\" You bristle a bit at an actual adult saying 'Duh' to you. It's clear that
+			he's behind a bulletproof window for a reason."
+		}
+		else
+		{
+			SetQuip(11,2,0)
+			SetQuip(11,3,0)
+
+			"You wave your wallet around the room. You feel like a complete prick, as your old credit card had a magnetic strip on it and you never
+			had to make a spectacle out of yourself. It seems to work, though.\n"
+
+			"\"Ahh, membership paid for, you rich prick! You go in!\" The old guy behind the counter shakes his head at your arrogance, happy
+			that you're not snapping your fingers for further attention."
+
+			GameEvents[6] = 1
+		}
+	}
+	else
+	{
+		"You can't do that here."
+	}
+}
+
+
+routine DoCall
+{
+	if FindObject(phone, location)
+	{
+		"You can't afford the cellular plan that allows you to call out ever since \B\IJoe\i\b called Nepal in a futile attempt to
+		special order marshmallow fluff."
+	}
+	else
+	{
+		"You can't do that here."
+	}
+}
+
+routine DoCurse
+{
+	"Please refrain from cursing inside the bubble."
+}
+
+
+routine GetMessages()
+{
+! Do this with a bit mask instead? 
+
+if FindObject(phone, location)
+	{
+		if PhoneArray[1] = 1
+		{
+			PhoneArray[1] = 0
+
+				"Your first message is from \B\IJoe\i\b.  He said that he changed the door's lock combination to 6E6F736F756C. It was nice of him to tell you that.\n"
+
+				"Your second message is from the redheaded dancer at Kangaroo's. You haven't had a conversation with her in weeks, but she somehow knew that you
+				had left Phobos and were planning on returning. Her message is quick, hushed and staccato, but she indicated that she wants to see you where she works 
+				as soon as you get back. "
+
+				! Change status of door to Raif's apartment
+				Officedoor is not locked
+		}
+
+		if PhoneArray[2]  = 1
+		{
+			PhoneArray[2] = 0
+
+				"Cinn called you and left a message -- she said she is going to be a little late to the diner."
+		}
+	}
+	else
+	{
+		"You don't have a phone nearby."
+	}
+}
+
+routine CheckPhoneMessages()
+{
+local x, num_phonemess = 0
+
+	for (x=1; x<20; x++)
+	{
+		if PhoneArray[x] = 1
+		{
+			num_phonemess++
+		}
+	}
+
+	if num_phonemess > 0
+	{
+		"\nYour phone is blinking, as you have a message."
+	}
+
+return
+}
+		
+
+routine DoInvestigate
+{
+	"You don't learn anything more than what you'd learn by looking."
+}
+
+
+routine DoJumpOver
+{
+	"Comport yourself."
+}
+
+
+routine DoKnock
+{
+	"Nothing happens."
+}
+
+
+routine DoShoot
+{
+	"You can't shoot that."
+}
+
+routine MoveCinntoDiner
+{
+	!GameEvents[25] = Final conversation about Taft
+	!GameEvents[26] = Final conversation about Alexei 
+
+	if GameEvents[25] = 0
+	{
+		"\"I don't mean to be a pain, but chat with me for just another sec,\" says Chmod."
+	}
+	elseif GameEvents[26] = 0
+	{
+		"\"Ahhh, one more sec, talk to me, Raif,\" says Chmod."
+	}
+	else 
+	{
+		if GameEvents[27] = 0
+		{
+			GameEvents[27] = 1
+
+			CharExclaim(Chmod, ExclaimArray[2])						
+
+			pause
+		}
+
+		if (Cinnamon.karma < 0)
+		{
+			SetQuip(6,7,1)
+			SetQuip(6,8,1)
+			SetQuip(6,9,1)
+		}
+		else
+		{
+			SetQuip(6,5,1)
+			SetQuip(6,6,1)
+		}
+
+	}
+
+return
+}
+
+!----------------------------------------------------------------------------
+! CArt(object)                          ! prints, for example, "An <object>"
+
+routine PM(obj)
+{
+
+	if Raif is Chip01_Seeing_Mimes
+	{
+		print capital obj.mimename;
+	}
+	else
+	{
+		print capital obj.name;
+	}
+
+}

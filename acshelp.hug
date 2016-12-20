@@ -1,0 +1,400 @@
+ !\---------------------------------------------------------------------------
+
+	ACSHELP.HUG
+	Help menu system for PANTOMIME
+
+---------------------------------------------------------------------------\!
+
+!----------------------------------------------------------------------------
+! GENERAL HELP MENU:
+!----------------------------------------------------------------------------
+
+  replace DoHelp
+{
+	local a = 1
+
+	! Since we're corrupting the graphics window
+	!last_drawn_picture = 0
+
+	! MENU_...COLOR settings added to this DoHelp replacement:
+
+	DEFAULT_TEXTCOLOR = TEXTCOLOR	!used for the help file 
+	DEFAULT_BGCOLOR  = BGCOLOR	!used for the help file
+
+	TEXTCOLOR = BRIGHT_WHITE
+	BGCOLOR = BLACK
+
+	MENU_TEXTCOLOR = DEF_FOREGROUND
+	MENU_BGCOLOR = DEF_BACKGROUND
+	MENU_SELECTCOLOR = DEF_SL_FOREGROUND
+	MENU_SELECTBGCOLOR = DEF_SL_BACKGROUND
+
+	while true
+	{
+		menuitem[0] = "PANTOMIME"
+		menuitem[1] = "Introduction"
+		menuitem[2] = "System Requirements"
+		menuitem[3] = "What is Interactive Fiction?"
+		menuitem[4] = "Game Instructions -- Commands" 
+		menuitem[5] = "Hints"
+		menuitem[6] = ""
+		menuitem[7] = "Credits" 
+		menuitem[8] = "License and Copyright Information"
+		menuitem[9] = "About the Hugo Compiler"
+		menuitem[10] = "About the Programmer" 
+		a = Menu(12, 0, a)
+		select a
+
+		case 0
+		{
+			TEXTCOLOR = DEFAULT_TEXTCOLOR
+			BGCOLOR = DEFAULT_BGCOLOR
+
+			color TEXTCOLOR, BGCOLOR
+
+			window 0
+
+			cls
+
+			PrintStatusline
+
+			DescribePlace(location)
+			return
+		}
+		case 1:  Help_Introduction
+		case 2:  Help_SystemRequirements
+		case 3:  Help_WhatIsIF
+		case 4:  Help_Commands
+		case 5:  Help_Hints
+		case 7:  Help_Credits
+		case 8:  Help_License
+		case 9:  Help_AboutHugo
+		case 10:  Help_AboutProgrammer
+	}
+
+
+}
+
+routine Help_Introduction
+{
+	CenterTitle("\BIntroduction\b")
+
+	"\n\BPantomime\b takes place on the Martian moon of Phobos, in the year 2044. Mankind has developed colonies on Mars, Titan, Ganymede and installed a life
+	bubble on the closer, larger Martian satellite. Mankind has also figured out a way to do cloning from bits of DNA (it's been busy, mankind). One such clone,
+	colloquially called a \Ipantomime\i, is preparing to tell all the denizens on Phobos that it will crash into Mars much sooner than expected, by several thousand
+	years.\n"
+
+	"In this game, characters that are pantomimes (if the player character knows their origin) have their names written in italics. If a character is a clone of a clone,
+	that character's name is written in bold italics.\n"
+
+	"\n[Press a key...]";
+	pause
+}
+
+routine Help_SystemRequirements
+{
+
+	CenterTitle("\BSystem Requirements\b")
+
+	"\n\BPANTOMIME\b is written with Hugo, a powerful language capable of producing graphical text
+	adventures for many different platforms. This game is currently supports the following operating
+	systems directly:\n\n"
+	
+	"Windows 98, Windows NT 4.0, Windows XP, DOS 6.22, Macintosh, BeOS, Amiga, Linux"
+
+	"\n[Press a key...]";
+	pause
+}
+
+routine Help_WhatIsIf
+{
+
+	CenterTitle("\BWhat is Interactive Fiction?\b")
+
+"\nInteractive fiction is a type of video game that is dependent upon the player typing English commands rather
+than directing his or her character through a mouse, joystick or auxiliary game controls. These types of game
+-- also known as 'text adventures' -- were dominant throughout the 1980s. Companies such as Infocom, Magnetic
+Scrolls, Level 9 and Legend released these adventures fairly regularly. The earlier games were generally 
+wholly devoid of graphics while some later ones had still pictures of often stunning quality to help the 
+player visualize the scene.\n"
+		
+"Perhaps inevitably, text adventures began to die as computers were able to better display and process 
+graphics. Infocom was purchased (and subsequently shut down) by Activision, Magnetic Scrolls eventually stopped
+writing games altogether and Level 9 got out of the entertainment software field.\n"
+
+"However, there are still a certain faction of game players that enjoy -- and even prefer -- this style of 
+gaming experience. Development languages have been freely released in recent years that allow computer programmers
+to write their own adventures. These systems -- Inform, Tads, Hugo, AGT, ADRIFT and Alan -- are fairly easy to pick up
+and offer friendly manuals & support to assist with game development. As a result many former players are now
+writing their own text adventures with increasingly remarkable results.\n"
+			
+"It would probably be accurate to say that the most experimental and engrossing video games currently being 
+produced are coming from this community of developers. Players that perhaps seek more depth and story are
+drawn to these works. And most of these new games are totally free, to boot.\n"
+
+"If you'd like to learn more about the IF scene, configure your newsreader to pick up rec.games.int-fiction
+and rec.arts.int-fiction. A FAQ is posted on rgif every week for new players. If you'd like to find more
+games similar to this one, go over to mirror.ifarchive.org. You won't be disappointed."
+
+"\n[Press a key...]";
+pause
+}
+
+
+routine Help_Commands
+{
+	CenterTitle("\BCommand Summary\b")
+
+	"\nBasic Gameplay Commands:"
+	"\BNORTH\b to go north. Can be shortened to \"n\"."
+	"\BSOUTH\b to go south. Can be shortened to \"s\"."
+	"\BWEST\b to go west. Can be shortened to \"w\"."
+	"\BEAST\b to go east. Can be shortened to \"e\"."
+	"\BIN\b to go in."
+	"\BOUT\b to go out."
+	"\BUP\b to go up."
+	"\BDOWN\b to go down."
+	"\BTALK\b to \Iperson\i: Tells Raif to talk to another character. Can be shortened to \"t\"."
+        "\BLOOK\b: Prints the room description."
+	"\BEXAMINE\b \Iitem\i: Stare intensely at a particular item. Can be shortened to \"x\"."
+	"\BFIGHT\b \Iperson\i: Tells Raif to attack another character."
+
+	"\nManagement Commands:"
+	"\BINVENTORY\b: Displays what Raif is holding. Can be shortened to \"i\"."
+	"\BWAIT\b: Allows time to pass for one turn. Can be shortened to \"z\"."
+	"\BAGAIN\b: Repeats the last command. Can be shortened to \"g\"."
+	"\BSCORE\b: Prints the current gaming session's score."
+
+   	"\nSystem Commands:"
+	"\BABOUT\b: Prints the initial info message."
+	"\BHELP\b: Gets you back to these help screens."
+	"\BSAVE\b: Saves the game in progress. You will be prompted for a filename."
+	"\BRESTORE\b: Loads a saved game."
+	"\BRESTART\b: Begins the game anew, as if playing it for the first time."
+	"\BSCRIPT ON\b: Logs the game's text to an output file."
+	"\BSCRIPT OFF\b: Turns off game logging."
+	"\BOOPS\b: When followed by a word, corrects a typo of the previous line with that word."
+	"\BUNDO\b: Takes back the previous command and puts the game in a state one move earlier."
+
+	"\n[Press a key...]";
+	pause
+}
+
+
+routine Help_Scoring
+
+{
+	CenterTitle("\BScoring\b")
+
+	"\nThere are 8 total points in \BPANTOMIME\b. Raif will receive points for
+	accomplishing those tasks that are advantageous to him personally, and those tasks that advance
+	the game's story." 
+
+	"\n[Press a key...]";
+	pause
+}
+
+routine Help_Hints
+{
+	CenterTitle("\BRegarding hints...\b")
+
+	"\nIt is not possible to get the game in an unwinnable state. Talking to the characters is critical to advance the action, 
+	and Raif usually has a couple options for tone and/or attitude throughout the game. \n"
+
+	"\nFor more specific help and hints with the game, try the Usenet newsgroup \Brec.games.int-fiction\b -- the users of this group are 
+	often able to help with quality hints and solid nudges. Additionally, you are invited to drop by the author's BBS at \Bhttp://www.joltcountry.com/phpBB2\b
+	where he will be able to answer any and all questions."
+	
+	"\n[Press a key...]";
+	pause
+}
+
+
+
+routine Help_ReleaseHistory
+{
+	CenterTitle("\BRelease History\b")
+
+	"\n\IRelease 1.00 (March 31st, 2006)\i\n\
+	\_     The first release of PANTOMIME\n\n";
+
+	"\n\IRelease 1.01 (April 24th, 2006)\i\n\
+	\_     The second release of PANTOMIME\n\n";
+
+	"\n\IRelease 1.02 (April 26th, 2006)\i\n\
+	\_     The third release of PANTOMIME\n\n";
+
+
+	"\n[Press a key...]";
+	pause
+}
+
+routine Help_Credits
+{
+	CenterTitle("\BCredits and Acknowledgements\b")
+
+	"\n\BPANTOMIME\b  was written and programmed by Robb Sherwin, copyright (c) 2006.  Please send
+	comments to  beaver@zombieworld.com."
+
+	"\nTesting:"
+	"Ben Parrish, Jonathan Blask, Dayna Rich, Johnny Rivera, Randy McLellan, Greg D'Avis and Drew Mochak"
+
+	"\n\nThere are a few people I would like to thank regarding the development of this game:"
+	"\BBill Arnett\b, for www.nineplanets.org."
+	"\BKent Tessman\b, for the Hugo programming language, support and engine."
+	"\BMike Snyder\b, for Hugo programming support."
+	"\BGreg Boettcher\b for running the 2006 Spring Thing."
+
+	"\nSpecial thanks to Dayna, Greg and Drew. This game would not exist if not for a generous donation of their free time."
+	
+	Disclaimer
+
+	"\n[Press a key...]";
+	pause
+}
+
+
+routine Help_License
+{
+	CenterTitle("\BLicense and Copyright Information\b")
+	
+	print "\n\B"; GameTitle; "\b"
+	"Copyright (c) 2006 by Robb Sherwin"
+
+	"\n\BHugo Compiler and Engine\b"
+	"Copyright (c) 1995-2006 by Kent Tessman"
+	"\nThis game (";
+	GameTitle
+	") is copyright (c) 2006 by Robb Sherwin (the author).  The author
+	reserves all rights regarding duplication, distribution, and
+	modification of the game or any of its parts. This game is not public 
+	domain and users are not allowed to create their own derivative works.
+	This game comes with absolutely no warranty."
+
+	"\n\n\B\UDistribution\b\u"
+	"\nFree distribution of ";
+	GameTitle
+	" is allowable provided that it is modified in absolutely no manner, no fee
+	is charged and the author is contacted regarding distribution to ensure that
+	the latest version of the software is to be included. Failure to contact the
+	author regarding third-party distribution constitutes a breach of this 
+	software's license.\n"
+
+	"\n(Distribution of the Hugo Compiler and Engine is also
+	allowable, given the same provisions.  Additionally, distribution
+	of programs created with the Hugo Compiler and/or using the Hugo
+	Library must correspond to the terms of use specified by Kent
+	Tessman, primarily that explicitly commercial distribution of the 
+	Hugo Engine or elements of the Hugo Library is allowable with 
+	the express written consent of the author.  See the Hugo Manual 
+	or go to \Bwww.generalcoffee.com\b for more details.)"
+
+	"\n\n\B\UWarranty\b\u"
+	print "\n"; GameTitle;
+	" and the Hugo Engine are available free of charge, and there is no
+	warranty whatsoever pertaining to their use."
+
+	"\n\n\B\UDisclaimer\b\u"
+	Disclaimer
+
+	"\n[Press a key...]";
+	pause
+}
+routine Disclaimer
+{
+	"\nThe characters and events in this game are fictitious.  Any
+	resemblance to real characters or events is entirely coincidental."
+}
+
+routine Help_AboutHugo
+{
+	CenterTitle("\BAbout the Hugo Compiler\b")
+
+	"\n\BHugo\b is a language designed and written by Kent Tessman for
+	developing interactive fiction.  The system consists of the \BHugo
+	Compiler\b, which compiles source code to be run by the interpreter
+	(the \BHugo Engine\b)."
+
+	"\nHugo is an easy-to-learn, powerful, and flexible language.  The
+	syntax is relatively straightforward, keeping hieroglyphic syntax
+	to minimum.  Hugo is relatively object-oriented, in that a program
+	consists of a number of objects representing the rooms, objects,
+	and characters that make up the landscape of the story.  Interaction
+	between these objects is governed by a set of rules, or routines,
+	that are specified by the programmer."
+
+	"\nA number of powerful pre-existing routines are available in the
+	\BHugo Library\b, which is a part of the standard Hugo package.  The
+	library routines are designed to manage many of the \"real-world\"
+	aspects of an interactive story, such as weight and containment
+	of objects, the presence or absence of light in a location, doors,
+	vehicles, characters, clothing, and a full complement of player
+	verb routines for moving about, getting things, examining them,
+	opening and closing them, switching them on and off, eating them,
+	drinking them, throwing them, conversing with characters, etc.  By
+	using the library, a programmer need not worry about many of the
+	more mechanical aspects of maintaining the game universe, and can
+	more quickly dive into the writing of the story proper."
+
+	"\nThe Hugo compiler and interpreter are written in ANSI C, and the
+	source code is readily available; porting of Hugo to other computer
+	platforms is encouraged."
+
+	"\nHugo is currently available via anonymous FTP from the
+	\BInteractive Fiction Archive\b maintained by David Kinder, Stephen Granade,
+	Andrew Plotkin and Paul Mazaitis at \Iftp.ifarchive.org\i in the directory \Iif-archive/programming/hugo\i.  \
+	There one may find the executable versions of both the compiler and
+	engine, as well as the library files and a number of Hugo example
+	programs.  A selection of Hugo games is available under
+	\Iif-archive/games/hugo\i.  The Interaction Fiction Archive is also
+	an excellent source of materials relating to the history and
+	development of interactive fiction."
+
+	"\nFinally, current discussion of interactive fiction design in
+	general, as well as Hugo and other languages in specific, can be
+	found on the Usenet newsgroup \Brec.arts.int-fiction\b.  Discussion of
+	game play can be found on \Brec.games.int-fiction\b."
+	"\nVisit the Hugo Homepage at http://www.generalcoffee.com."
+
+	"\n[Press a key...]";
+	pause
+}
+
+routine Help_AboutProgrammer
+{
+	CenterTitle("\BAbout the Programmer\b")
+
+		"\n\BRobb Sherwin\b is a thirty-one year old computer programmer originally from Rochester, NY. 
+		He attended Syracuse University and later moved to northern Colorado where he spends his free time 
+		playing roller hockey, commuting and getting angry at the New Orleans Saints. He lives in an 
+		unsteady alliance with his girlfriend, her two cats, spotted gecko and snake.\n\n
+
+		He can be reached via e-mail at \Bbeaver@zombieworld.com\b\n"
+	
+		"\BPANTOMIME\b is his seventh work of interactive fiction. He previously authored:\n"
+
+		"\BNECROTIC DRIFT\b - 2004"
+		"\BFALLACY OF DAWN\b - 2001"
+		"\BNO TIME TO SQUEAL\b (with Mike Sousa) - 2001"
+		"\BA CRIMSON SPRING\b - 2000"
+		"\BREVENGER\b - 2000"
+		"\BCHICKS DIG JERKS\b - 1999"		
+
+		"He has ported \BHAMMURABI\b to Hugo and contributed to \BTHE RECRUIT\b, by Mike Sousa.\n"
+
+		"All of these games can be freely downloaded through his webpage located at \Bwww.joltcountry.com\b.\n\n"
+		
+	
+		"\n[Press a key...]";
+	pause
+
+	
+}
+
+routine GameTitle
+{
+	"\BPANTOMIME\b";
+}
+
+
+

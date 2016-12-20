@@ -1,0 +1,428 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!Daemons
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+daemon Set_Prompt
+{
+timer 0
+}
+
+event in Set_Prompt
+{
+	self.timer++
+	select(self.timer)
+
+	case 4
+	{
+		"\n\B[We won't bother with the 'What Next?' bit any longer.]\b"
+		prompt = ">"
+	}
+}
+
+
+daemon Kill_Kang
+{
+timer 0
+}
+
+event in Kill_Kang
+{
+	self.timer++
+	select(self.timer)
+
+	case 1
+	{
+		CharExclaim(Kangaroo, ExclaimArray[self.timer])
+
+		"\n(In 11 minutes, the electromagnetic pulse I created should reach Mr Kangaroo.)"
+	}
+
+	case 2
+	{
+		CharExclaim(Kangaroo, ExclaimArray[self.timer])
+
+		"\n(In ten minutes, the electromagnetic pulse I created should reach Mr Kangaroo.)"
+	}
+	case 3
+	{
+
+		CharExclaim(Kangaroo, ExclaimArray[self.timer])
+
+		"\n(In nine minutes, the electromagnetic pulse I created should reach Mr Kangaroo.)"
+	}
+	case 4
+	{
+		CharExclaim(Kangaroo, ExclaimArray[self.timer])
+
+		"\n(In eight minutes, the electromagnetic pulse I created should reach Mr Kangaroo.)"
+	}
+	case 5
+	{
+		CharExclaim(Kangaroo, ExclaimArray[self.timer])
+
+		"\n(In seven minutes, the electromagnetic pulse I created should reach Mr Kangaroo.)"
+	}
+	case 6
+	{
+		CharExclaim(Kangaroo, ExclaimArray[self.timer])
+
+		"\n(In six minutes, the electromagnetic pulse I created should reach Mr Kangaroo.)"
+	}
+
+	case 7
+	{
+		CharExclaim(Kangaroo, ExclaimArray[self.timer])
+
+		"\n(In five minutes, the electromagnetic pulse I created should reach Mr Kangaroo.)"
+	}
+	case 8
+	{
+		CharExclaim(Kangaroo, ExclaimArray[self.timer])
+
+		"\n(In four minutes, the electromagnetic pulse I created should reach Mr Kangaroo.)"
+	}
+	case 9
+	{
+		CharExclaim(Kangaroo, ExclaimArray[self.timer])
+
+		"\n(In three minutes, the electromagnetic pulse I created should reach Mr Kangaroo.)"
+	}
+	case 10
+	{
+		CharExclaim(Kangaroo, ExclaimArray[self.timer])
+
+		"\n(In two minutes, the electromagnetic pulse I created should reach Mr Kangaroo.)"
+	}
+	case 11
+	{
+		CharExclaim(Kangaroo, ExclaimArray[self.timer])
+
+		"\n(In one minute, the electromagnetic pulse I created should reach Mr Kangaroo.)"
+	}
+	case 12
+	{
+		if drapes is open
+		{
+			Kangaroo.hitpoints = -101
+			GameEvents[35] = 1
+			remove Kangaroo
+
+			"\nAn enormous pulse of energy bursts through the window, striking Kangaroo clearly in the back. He is instantly vaporized."
+
+			!Remove this quip for Chmod
+			SetQuip(10,24,0)
+
+			!Set this one for him when he is turned on 
+			SetQuip(10,25,1)
+
+			if Chmod is switchedon
+			{
+				Chmod is not switchedon
+
+				Chmod.hitpoints = 0
+
+				"\nThe energy continues throughout the room, coarsing through Mr Chmod's electrical systems as well. The
+				light goes out in his LED as his limbs flail about."
+			}
+		}
+		else
+		{
+			"\nKangaroo pauses for a moment -- the energy did not get through to him -- and begins his assault on everyone present.\n"
+
+			"You put up a good fight, but the machine's twin \IJohnny Bench\i hands fit not only seven baseballs between them, but one
+			average-sized neck."
+
+			Raif.hitpoints = -101
+			endflag = 3
+
+			! Kill player 
+		}
+	}
+}
+
+
+daemon Kang_Drapes
+{
+timer 0
+}
+
+event in Kang_Drapes
+{
+	self.timer++
+	select(self.timer)
+
+	case 3
+	{
+		if Kangaroo.hitpoints > 0
+		{
+			if parent(Kangaroo) = location
+			{
+				if drapes is open
+				{
+					"\nMr Kangaroo closes the drapes."
+				}
+			}
+
+			drapes is not open
+		}
+	}
+}
+		
+
+daemon Panel_Breaks
+{
+timer 0
+}
+
+event in Panel_Breaks
+{
+	self.timer++
+	select(self.timer)
+
+	case 3
+	{
+
+		GameEvents[31] = 1
+
+		"\nThe panel quite suddenly flies apart. It's as if a concentrated beam of solar radiation \Ipunched through it.\i Surely that cannot be what truly happened, as that would
+		require belief of a nigh-mastery of energy manipulation coming from an experienced, yet youthfully-appearing master star with billions of years experience at this sort of thing.
+		And hey, I hardly believe it. Whatever craftsman's flares are at work, the panel has been vaporized and your exit west has been enabled."
+
+		remove panel 
+	}
+}
+
+
+daemon Cinn_On_Stage
+{
+timer 0
+}
+
+event in Cinn_On_Stage
+{
+	self.timer++
+	select(self.timer)
+
+	case 2
+		{
+			move Cinnamon to StripClub
+
+			if GameEvents[7] = 0
+			{
+				"\nA gorgeous redhead gracefully struts up to the center stage wearing only stiletto heels and a microphone on
+				a ring. She clears her throat and gives the crowd a confident smile. She's one of the best-looking women 
+				ever to leave Earth and has no problem commanding the attention of the room."
+			}
+			else
+			{
+			}
+		}
+	case 3
+		{
+			if GameEvents[7] = 0
+			{
+				"\nThe redhead self-consciously coughs once into her microphone. \"I'm Cinnamon,\" she purrs. The crowd applauds
+				and hoots. She smiles with such warmth that Mimas evaporates. \"I'd like to thank you all for coming tonight. 
+				We have a very special guest at the club tonight... you know him as the Governor of New York and for the campaign
+				he's running to be President of the United States of America... Ladies and Gentlemen -- \" she laughs and
+				brings the mic away from her face for a moment. This woman has a three-picture deal back on Earth and was
+				leaving the moon soon anyway. \"I present \IWilliam Howard Taft!\i\"\n"
+
+				"There is applause everywhere, managing to drown out the horrible music that the DJ has faithfully not stopped
+				playing. It's all very enthusiastic, save for the very, very back of the club near the curtains."
+
+				GameEvents[7] = 1 !Now know her name 
+				Cinnamon.article #1 = ""
+				Cinnamon.name #1 = "Cinnamon"
+
+			}
+		}
+
+	case 4
+		{
+
+			move Taft to StripClub
+
+			move commotion to StripClub
+
+			"\n\ITaft\i walks briskly up to the stage, all business. Cinnamon slowly peels off the microphone from her ring finger
+			and passes it to \ITaft\i, bending down slightly to give him a kiss on the cheek. \ITaft\i takes the opportunity to 
+			squeeze a breast, to the banal, delighted fury of the crowd. You see \IScarlett\i wipe her brow; it's really starting to get
+			warm in here. \ITaft\i laughs in that sort of chortle that big guys make and puts the mic on.\n"
+
+			"\"Thank you all for being here tonight. Thank you all...\" \ITaft\i wrinkles his nose for a second as he notices
+			the commotion going on at the back of the club."
+		}
+
+	case 5
+		{
+			Taft.hitpoints = -101
+			Scarlett2.hitpoints = -101
+
+			"\n\ITaft\i begins his speech though it's clear he'd like the room to be free of distractions. While his speech concerns a moon
+			that nobody on Earth cares about, the fate of Phobos is still pretty critical to everyone on it. After a few honeyed words to begin
+			his opening, however, he finds the ruckus towards the back intolerable.\n"
+			
+			"\"Excuse me,\" he says, away from the microphone and to one of the club's nearby bouncers. It appears as if \ITaft\i wants
+			them to do something about the shouting coming from the back of the club. You turn to say something snotty about \ITaft\i
+			to \IScarlett\i when you hear two pops -- two sharp shots about two seconds apart. You see \ITaft\i collapse to the floor. Things
+			quickly turn to bedlam inside the club."
+		}
+
+	case 7
+		{
+			if GameEvents[8] = 0
+			{
+				"\nChmod, facing a different direction than you, suddenly gasps. \"Oh... oh, no...\" \n"
+
+				"He presses his cold, robotic hands against his face in horror. You both see \IScarlett\i sitting upright,
+				so comfortably in her chair... her dead eyes looking straight ahead, head slumped to the side, her white blouse 
+				quickly turning a deep crimson."
+
+				Switch_Chapter(2)
+
+			}
+		}
+}
+
+
+daemon Magnolia_Appears
+{
+timer 0
+}
+
+event in Magnolia_Appears
+{
+	self.timer++
+	select(self.timer)
+	case 2
+		{
+			move Magnolia to NewStripClub01
+
+			if Player in NewStripClub01
+			{
+				SetQuip(9,3,1)
+				SetQuip(9,4,1)
+				SetQuip(9,5,1)
+
+				if Raif is Chip01_Seeing_Mimes
+				{
+				! Two comments regarding her being a pantomime 
+				SetQuip(9,1,1)
+				SetQuip(9,2,1)
+				SetQuip(9,6,1)
+
+					if StripOfficeDoor is not open
+					{
+					"\nA tall brunette emerges from the back office. She slams the door shut and crams something into her purse. ";
+					}
+					else
+					{
+					"\nA tall brunette emerges from the back office. She doesn't bother to shut the door and crams something into her purse. ";
+					}
+				
+					"You recognize her from previous visits, but never knew she was a pantomime.\n"
+
+					PM(Magnolia)
+				
+					" is just under two meters tall. She is wearing a gray silk collared shirt, untucked over a nicely-fitting pair of denim jeans. 
+					Curly locks of raven-colored hair seem to bounce with every graceful step. Visible to you is the word 'PANTOMIME' above her head in a 
+					thick impact font, thanks to the code you ingested earlier. \n"
+
+					"Whatever went on in Mr Kangaroo's office, it certainly seemed to put her in a foul mood."
+				}
+
+				else
+				{
+					if  StripOfficeDoor is not open
+					{
+					"\nA tall brunette emerges from the back office. She slams the door shut and crams something into her purse. ";
+					}
+					else
+					{
+					"\nA tall brunette emerges from the back office. She doesn't bother to shut the door and crams something into her purse. ";
+					}
+					
+					"You recognize her from previous visits, her stage name is ";
+
+					PM(Magnolia)
+				
+					". Whatever went on in Mr Kangaroo's office, it certainly put her in a foul mood."
+				}
+			}
+
+		}
+		
+	case 3
+	{
+		Magnolia is not hidden
+	}
+
+}
+
+
+daemon Kangaroo_Daemon01
+{
+timer 0
+}
+
+event in Kangaroo_Daemon01
+{
+		self.timer++
+		select(self.timer)
+
+		case 2
+			{
+				"\nYou hear some commotion over near the entrance of the club.  Over the searing chirp of the club's dance music you can make out some very
+				agitated disagreements between one of the bouncers and one of the would-be customers."
+
+				move Raif2 to StripClub
+			}
+
+		case 3
+			{
+				"\nThe guy trying to unsuccessfully get into the club has ratcheted up the anger! It's sadly ineffective, however, as the blokes working
+				security at these sorts of clubs are guaranteed a sizeable salary to ensure that bar incidents go away quickly and are instantly forgotten.
+				Whether you're coked-up through your eyeballs, a living human growth experiment suddenly and desperately looking for a quick mirror
+				to gaze lovingly (and re-assuredly) into or a worrywort gamefan fretting and fussing over the odds of you getting your handheld gaming
+				unit back from the coat check.\n"
+
+				"\"You'll get your handheld gaming unit back from coat check,\" says \IScarlett\i, helpfully."
+
+				SetQuip(2,1,0)
+				SetQuip(2,2,0)
+				SetQuip(2,3,0)
+
+				SetQuip(2,4,1)
+			}
+
+		case 4
+			{
+				"\n\ITaft\i walks over to the angry young man who's getting angrier by the second presumably due to all the asses he's not seeing shaking on stage. You
+				can't make out what is being said - you're a private investigator but you're not  but he doesn't seem to help much.\n"
+
+				"A redhead with the most achingly longest legs you've ever seen takes the stage. A synthesized shriek of electronic bleats from the club's infinite 
+				number of speakers."
+			}
+
+		case 5
+			{
+				"\nThe rather unruly man pulls a laser from his sweatpants and loads a crystal into it. It takes only moments for panic to spread and for 
+				everyone present, excepting yourself, to duck down in a sad attempt to hide.\n"
+
+				"The man discharges his weapon into the chest of the clone of \IWilliam Howard Taft\i!\n"
+
+				"Taft catapults backwards an crumples into a heap onto the ground."
+			}
+		
+		case 6
+			{
+				"\nThe throbbing wave of music hasn't stopped
+				
+				You turn back towards the bar to help \IScarlett\i up. Only there is a disintegrated hole within her chest, the blood having instantly cauterized around
+				the wound.\n"
+
+				"This isn't how it was meant to be..."
+			}
+
+}

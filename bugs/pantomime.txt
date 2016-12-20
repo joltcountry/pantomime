@@ -1,0 +1,443 @@
+to do:
+
+o Make Raif mention that he was on the same channel with her as she died and her last words were with him when she died
+o Chmod gives wallet to Raif 
+	- interact with doorman, Chmod pipes up, gives wallet
+	- look at door after doorman arrives, Chmod pipes up, gives wallet
+	- conversations (add "I lost my wallet")
+	- inventory ("I lost my wallet")
+
+o Make status line reflect his cash on card 
+	-- Chmod saying it's a mod
+o Put in the guy behind glass selling membership
+o Give that guy a long custom title
+o buy membership
+o go north into corridor
+o stop from going south of course
+
+
+
+o coat check (demonstrate buying things, buy a night membership, have chmod waved through)
+o sit them down
+
+
+
+done:
+added red keycard
+o let them in (have doorman show up after speaking to chmod)
+o have Raif give the doorman the red keycard
+
+
+
+
+Gameplay: 
+
+o Shopping
+o Combat, based on weapon, but not randomized. 
+o Conversation
+o Punching Mugabe flashback to show that not all pantomimes get produced correctly 
+
+
+Quotes:
+"set permissions to 777 you frigid heap."
+
+Environment:
+
+o Phobos
+
+o Pantomimes, of course
+o Holo custom titles
+o 
+
+
+Puzzles:
+
+Something is moveable or accessible with the gravity turned off. 
+Getting the Sun to produce a solar flare or intense brightness to ward off an enemy
+
+
+
+!! add in the brochure for raif's mods
+
+o sexual pleasure mod
+o fingernail biting prevention mod
+o lisp compiler, mental
+o a numbers receiver. Numbers are given out, something lengthy, and theyr epeat. 
+   the numebrs are the ascii representatives of words turned backwards.
+o E-mail
+o Heartbeat detection for lying 
+o Current mission 
+o Moon phases
+o Phone &  Phone numbers
+
+
+
+
+
+PANTOMIME
+
+by Robb Sherwin
+
+Raif 
+Original Girl: Scarlett 
+First Copy (she dies) \IScarlett\i
+Second Copy Scarlett in italics and bold
+Benjor, Raif's friend who is insane
+The Sun 
+
+
+Nobody is left on Phobos. The acceleration has increased and it's going to crash into Mars.
+
+Taft and Scarlett are killed and Raif wants to find out why, it matters to him even though the people left on 
+Phobos are committing crime or trying to get off the planet any way they can.
+
+
+o Murder goes on
+o Raif is stunned for a bit, but he goes back to the scene of the crime
+o A detective gives him some money to go shopping with for mods
+o Back to Kangaroo's, but the office of the owner. 
+	To interview the owner about Taft
+	It is revealed that his business partner is dead, and his eyes have been gouged out of his face
+	Readhead stripper has a clue for Raif, later 
+	Raif wants to talk to the owner's wife 
+
+o Alleys, as Raif heads towards the apartment complex. He is shot at here. 
+   Guns are illegal due to the fact that they might rupture the air bubble.
+
+o Apartment complex, where the wife of the business owner lives 
+	She didn't want the pantomime, hardly ever saw him around
+	She was fucking a kid from the record store 
+
+
+The stuff below is good. Try to flesh out some uses for body mods. It can be software and hardware. 
+The thing about body parts -- try to tie it into being an ubermensch or creating the ultimate pantomime,
+maybe pantomimes are illegal on Earth so he did it there. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Scene list
+o Kangaroo's Strip Club 
+	Taft and Scarlett clone die
+
+o Raif's desk 
+	He takes the case for Taft
+	Scarlett clone doesn't get one because she's a mime
+
+o Back to Kangaroo's, but the office of the owner. 
+	To interview the owner about Taft
+	It is revealed that his business partner is dead, and his eyes have been gouged out of his face
+	Readhead stripper has a clue for Raif, later 
+	Raif wants to talk to the owner's wife 
+
+o (Flashback) Raif is getting Scarlett's signature and fingerpint to authorize the second clone
+
+o Alleys, as Raif heads towards the apartment complex. He is shot at here. 
+
+o Apartment complex, where the wife of the business owner lives 
+	She didn't want the pantomime, hardly ever saw him around
+	She was fucking a kid from the record store 
+
+o (Flashback) Raif sees the first Scarlett clone step out of the cloning vat
+
+o The record store, where the kid works.
+	He was having sex with the owner's wife, as well as a couple strippers
+	But not the one trying to contact Raif 
+
+o The bar that the redheaded stripper wanted to contact Raif at
+	Some clue for Raif here 
+	She mentions that she thought she saw him earlier 
+	She mentions the parts about Scarlett doing camshows and calendars and things were always too warm for her when she was completely naked 
+	
+o (Flashback)
+
+o Back to the office at Kangaroo's
+	Raif can look around his desk for clues -- sees the folder with photos of famous body parts
+	Raif is now kidnapped and beaten
+	Tape is shown of the things Scarlett used to do, while Raif has to watch
+	He is beaten. His lack of any outstanding parts is mentioned. 
+	He is given a serum that will activate when the sun hits, killing him (reference this)
+	Taft's excursion from the morgue is mentioned 
+
+o Back Alley
+	The conversation with the Sun, who spares him 
+
+o Morgue
+	The owner will fight Raif there and lose quickly.
+	\IRaif\i was double-crossed and almost dissected
+	\IRaif\i gives off a speech...
+
+o (Final Flashback)
+
+o Raif's apartment
+	The gun is ready to be loaded.
+	Raif wonders if it's fate that he will disappoint Scarlett again
+	\B\IScarlett\b\i emerges before it can happen, however, and states that it's far too cold without him and is
+	he coming to bed?
+	And maybe things can be different after all. 
+
+
+
+
+
+
+
+
+=-=-=-=-=-
+o Years into the future, there exist clones. There are legitimate clones and those of a more illicit nature. 
+
+o Raif is trying to arrest a clone that escaped from jail. The clone was grown to take the place of a person who killed 
+  a business associate: the clone knows it. A whore was there as a witness, she could witness that the original killer's
+  penis was scarred. 
+
+o Raif corners the clone who has tracked down his real-life counterpart and torn off his penis. The player can let the
+  clone go or arrest the clone, in which case the clone will kill itself
+
+o Raif is being chased by his own pantomime, who reveals all these horrible things about Scarlett. 
+  = Scarlett became a camwhore
+  = Scarlett would do sex shows
+  = Scarlett did adult calendars and was on TV 
+  = Scarlett, of course, got herself through a difficult time before she even met Raif and put it all behind her
+
+  = It's Scarlett that Raif is in love with, not her pantomime, but he eventually realizes his mistakes and can at least now
+    love \IScarlett\i properly by the end. 
+
+o Raif and his girl are at a bar. A guy that the girl dated after the clone splitting comes up to her. Raif just snaps,
+and the girl doesn't know why because she has never met him
+
+
+o Raif is waiting for his girl to get restored from the cloning process. She comes out, dressed and he says "my darling!"
+
+
+o Raif attempts to get the signature of the original girl so that he can make the second copy
+
+
+o Raif was in a bar with the first copy and she was killed. They were arguing, however -- it wasn't going well. 
+
+
+o The very last scene, the second copy awakes as he is brooding by himself ready to end it all. The gun needs to be
+  loaded, the taunts can continue, he can no longer live within this pantomime of existence...
+
+  ... and she enters the bathroom as he's gathering the bullets. She says, "Are you coming to bed soon? It's too cold without you."
+
+  (Make it so that she has been complaining of the warmth the entire game.) 
+=-=-=-=-=-
+
+Characters...
+
+Raif: our protagonist
+Scarlett: the original.
+Scarlett#2: the first clone. Gets killed quickly in gametime.
+Scarlett#3: the one he ultimately corrects his mistakes with.
+
+The Sun: Raif finally speaks to the sun after hinting that he would like to speak to it.
+
+Game plot:
+
+FIRST SCENE
+
+
+Start at a point in the future. Real quick little snippet.
+
+Raif and Scarlett#2 are at a nightclub.  Scarlett speaks with some yellow words, giving Raif
+a chance to ask about and tell about those topics.
+
+In the background, someone is having trouble getting through the ID scanner.
+
+The person is decked out in a costume, but that's not unusual due to the venue. Everyone is wearing Presidential Masks because it's President's Day.
+
+The person finally touches the screen and it goes off and he's shocked that his fingerprints didn't work: he's a pantomime.
+
+The person fires off a shot at Taft -- who was the real Taft, only pantomimed. Everyone freaks out and another shot is heard.
+
+The descriptions that Raif provides are of Taft. The violence. Everything but Scarlett.#2 
+
+Scarlett#2 was shot dead with the second shot. 
+
+=-=-=-=-=-
+
+OPEN GAMING
+
+Raif can go to other places, but needs to go to the strip clubs where the act was commited in order to talk to the murderer. 
+
+Raif is back to his desk after eight months off. He went a little mad there for a while. He's brought back \I\BScarlett\b\i but the game
+doesn't acknowledge that yet. 
+
+A new case appears in his in basket. He's got a mobile unit, and there aren't any wires anywhere within his futurisitic detective's office. He
+handles anomolies commited by pantomimes, so of course it went to him.
+
+Benjor is a private detective and had a stake in this as well. His friend wears a costume with the unhappy face on it all over it, and
+a top hat  and eyepatch with the same. 
+
+A pantomime is suspected of murdering a business associate of a gambling den on the other side of town. The guy who did it's alibi is that he grew
+the clone for his wife to play with while he was away at work trying to make a successful business. 
+
+Raif and his friend interview the guy at the store, who certainly seems to be a little distraught at his business partner's death. He's awful quick
+to finger his clone for this one. 
+
+Benjor gets a little tired of listening to him lie, however, and presses the issue trying to get the guy to crack. 
+
+Raif or Benjor will get some special attention from a stripper as they leave, and a great clue can be grabbed here if they talk to her. 
+
+=-=-=-=-=-
+
+SECOND SCENE
+
+Raif is waiting for \I\BScarlett\i\b to arrive from the cloning procedure. 
+
+They are verifying that he got the correct information from the original. When in fact he stole the finger print and signature from her. 
+
+\B\IScarlett\i\b arrives and she is young and beautiful and they are together again and he exclaims "My darling!" She is confused, but okay.
+
+He has her back, again, and promises to himself that he'll never lose her again. 
+
+
+=-=-=-=-=-
+
+OPEN GAMING
+
+The businessman's wife can be interrogated. She says that she thinks Raif looks familiar. This is because Raif's clone was skulking neaby, but
+it's not revealed. 
+
+Nearby neighbors can be talked to and asked if they heard anything like a gunshot the night before. Allowing the player to traverse the apartment building to 
+see if anyone is home.  (If this is done,  some facts of the case there ought to be revealed for the looking.)
+
+It would be nice if the player could play chess against a blind man. in a store where you can't buy anything.
+
+The wife had little interest in her husband sexually. Clues around her apartment indicate that she was, in fact, having an affair with a kid stocking a store which 
+can be entered at any time.
+
+=-=-=-=-=-=-
+
+THIRD SCENE
+
+Raif is in front of Scarlett's door.
+
+He has on a glove that can take reverse impressions of people's fingerprints.  He has the permission forms for the release of a new clone
+from old genetic material. 
+
+He knocks, and Scarlett finally answers. Very pissed off. "It's been four years. You need to go away!" She mentions that she knows he already
+grew one clone and that was too much and she regretted it and how did she die, anyway?
+
+Her outgoing mail is there, with plenty of things that have her signature on it. 
+
+Raif should shake her hand or touch her or something and steal a piece of her mail so he has her fingerprint and signature for
+the permission forms. 
+
+=-=-=-=-=-=-
+
+OPEN GAMING
+
+The kid stocking the store has an apartment and goes to work late. So either way, he should be in one of those locales.
+
+Raif is attacked on his way to the kid! One shot rings through an alley. The killer can be chased for a bit. Follow
+into a store or a club or something?
+
+Benjor calls him up at that point, and the choice is there for Raif to tell him what happened. 
+
+The kid is at the store and admits that he was fucking the old girl's brains in quite regularly.  He luridly gives
+details. He never recalled seeing a pantomime.
+
+
+Main plot:
+
+o It is made known that Taft is exhumed and his body is at the morgue. 
+o The mime is found and didn't kill anyone. He kills himself due to his hatred for being a mime. 
+o The search is on for the businessman.
+o The stripper calls Raif and is found dead upon return, along with two of her friends. 
+o The club has various photos kicking about of people with large body parts. 
+o The businessman has fancied himself a hodge-podge monster, picking up cloned parts. Schwartzenegger's biceps. Jim Brown's thighs. 
+   Johnny Bench's hands. Peter North's cock. Etc.
+o This is why the hand prints for strangulation do not match: not his hands.
+o He will be at the morgue trying to obtain Taft's heart. 
+o The business man will crush Raif when spied upon, and many things are revealed. Raif knows it all.
+o Raif barely escapes when thrown through a window, and hides until morn. 
+o Raif wakes up and speaks with the sun. 
+o Benjor calls and Raif tells him about the businessman. 
+o The sun convinces him that the guy will go after Raif next.
+o Which leads to... 
+
+Secondary Plot
+
+o Raif's clone killed Taft
+o Raif's clone stalks him and tries to shoot him from a distance occasionally
+o Raif's clone killed \IScarlett\i
+o Raif's clone didn't know how to cope, it was grown accidently as a mistaken req and dumped and left to die, only it didn't.
+o Raif's clone explains that it has no soul, that its maker is no God that it never even got the chance to make the decision of faith or have the 
+   smug arrogance in knowing it evolved naturally. It has its answers and can't exist like that. It is going to kill the real Scarlett next and any 
+   and all descended clones.
+ o Raif has to take down his clone, which shouldn't be hard.
+ o Benjor drops by with the businessman's head. He had tried to transplant his own heart and failed miserably, slicing himself all apart. 
+
+Real Plot
+
+o Raif and Scarlett are talking, and Scarlett reveals that Raif doesn't know how to love, that he becomes too obsessed, that he is too angry.
+o Scarlett would lovingly allow Raif to grow a clone, but can't be with him. There isn't "some other guy."
+o She says, "My darling!" the first time (\IScarlett\i)
+o Things went well for Raif and \IScarlett\i, but he never really fixed his obsessions or his anger.
+o They were aruging for the nth time when she was killed.
+o He just wants one last try with this girl, one last resurrection.
+o He faked it, but got it and she came out of the tube and he says "My darling!"
+o He fills her in on everything that happened.
+
+The last scene
+
+o She asks him to turn up the heat, as it's too cold in the bed without him. 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Things for his mobile unit: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

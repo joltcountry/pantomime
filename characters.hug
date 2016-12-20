@@ -1,0 +1,1082 @@
+! Character List
+! 1 Raif
+! 2 Scarlett2
+! 3 Scarlett1
+! 4 Scarlett3
+! 5 Taft
+! 6 Redheaded Stripper -- Cinnamon 
+! 7 Bouncer / Doorman
+! 8 Raif2 
+! 9 Brunette Stripper -- Magnolia 
+!10 Mr Chmod
+!11 old man
+!12 Joe Carter
+!13 Mr Kangaroo
+!14 Alexei Mitchell -- Kangaroo's human partner 
+!15 Ms. Kitler
+!16 the Sun
+!17 the Cop
+!18 Mrs Kangaroo
+
+
+female_character Scarlett2 "\IScarlett\i"
+{
+charnumber 2
+maxhitpoints 40
+hitpoints 40
+armorclass 6
+attackadjust 3
+damagepotential 3
+karma 0
+
+is not quiet, hero, female
+
+
+in StripClub
+
+	inherits NPC
+
+	nouns "scarlett" "girl" "girlfriend" "woman"
+	adjectives "scarlett"
+!	parse_rank
+
+	initial_desc 
+	{
+		if GameEvents[9] = 0
+		{
+			"\n\IScarlett\i waves for you and Chmod to walk over and sit down next to her."
+			GameEvents[9]  = 1
+		}
+		else
+		{
+			"\n\IScarlett\i is sitting down next to you near the stage."
+		}
+	}
+
+	long_desc
+	{
+		"\IScarlett\i is a pantomime of a girl you dated several years ago. She's wearing an ivory-colored, long-sleeved blouse, a billowy gypsy's skirt and 
+		a zebra-print headband."
+	}
+	before
+	{
+		object DoKiss
+		{
+			if self.hitpoints > 0
+			{
+				"You give your sweetheart a brief kiss on the cheek, to her amusement."
+			}
+			else
+			{
+				"She is not responsive."
+			}
+		}
+	}
+}
+
+
+female_character Scarlett1 "Scarlett"
+{
+charnumber 3
+! This character should only appear in flashbacks
+
+}
+
+
+female_character Scarlett3 "\I\BScarlett\i\b"
+{
+charnumber 4
+maxhitpoints 40
+hitpoints 40
+armorclass 6
+attackadjust 3
+damagepotential 3
+karma 0
+
+is not quiet, hero, female
+
+	inherits NPC
+
+	nouns "scarlett" "girl" "girlfriend" "woman"
+	adjectives "scarlett"
+
+	long_desc
+	{
+		"She is exactly how you remembered... your last chance at a decent life with the woman you love. She's trembling."
+
+			if Raif is Chip01_Seeing_Mimes
+			{
+				"\n(The only, ah, difference is that the word 'PANTOMIME' is present above her head.)"
+			}
+			else
+			{
+				""
+			}
+	}
+	before
+	{
+		object DoKiss
+		{
+			if Raif2.hitpoints > 0
+			{
+				"Your pantomime won't let you near her."
+			}
+			else
+			{
+				"You kiss and kiss and kiss this woman."
+			}
+		}
+	}
+}
+
+
+character Taft "\ITaft\i"
+{
+charnumber 5
+maxhitpoints 40
+hitpoints 40
+armorclass 6
+attackadjust 3
+damagepotential 3
+karma 0
+
+is not quiet, hero, hidden
+
+	inherits NPC
+
+	size 9 
+
+	nouns "taft" "howard" "william" "bill"
+	adjectives "howard" "william"
+!	parse_rank
+
+	long_desc
+	{
+		if Chapter = 1
+		{
+		"\ITaft\i today is not as large as he was when he was President of the United States of America, but he's still pretty roomy. He has Criscoed brown hair,
+		a handlebar moustache that hasn't been in style in almost 200 years and locomotes with a waddling gait."
+		}
+		else
+		{
+			"\ITaft\i is naked and bulbous inside the chamber -- he looks purple, and already rotting. The autopsy they seemingly performed hasn't done him any 
+			favors, though, to be fair, and being fair is always something to consider with a former Chief Justice of the United States."
+
+			GameEvents[24] = 1
+
+			if GameEvents[17] = 0
+			{
+				GameEvents[17] = 1
+				SetQuip(10,21,1)
+			}
+		}
+	}
+}
+
+
+
+female_character Cinnamon "redheaded stripper"
+{
+charnumber 6
+maxhitpoints 40
+hitpoints 40
+armorclass 6
+attackadjust 3
+damagepotential 3
+karma 2
+
+is not quiet, hero, female, hidden, dancer
+
+	inherits NPC
+
+	nouns "stripper" "dancer" "girl" "redhead" "cinnamon" "woman"  "cinn"
+	adjective "red"
+	article "the" ""
+
+!	parse_rank
+
+
+	long_desc
+	{
+		if Chapter < 2
+		{
+			if GameEvents[7] = 0
+			{
+				"You didn't catch her name, so a description will have to suffice: s";
+			}
+			else
+			{
+				"S";
+			}
+				
+			"he's 5'10\" and in six-inch stiletto heels, bringing her to positively statuesque heights. She has unbelievably long, tanned and toned legs. 
+			In fact, it looks like her lower body was selected out of a catalog. She has a thin waist, with a sexy six-pack of abs clearly visible 
+			and D-cup breasts that form perfect teardrops. Her eyes are hidden under a decent amount of mascara, makeup and
+			soft bangs, but she has a cute button nose and warm smile."
+		}
+		else
+		{
+			"She is an attractive redhead of movie star quality. She's tall, stacked, tanned and toned."
+		}
+	}
+
+}
+
+
+character Doorman "doorman"
+{
+charnumber 7
+maxhitpoints 40
+hitpoints 40
+armorclass 20
+attackadjust 10
+damagepotential 15
+karma 0
+
+is not quiet, hero not hidden
+
+	inherits NPC
+
+	nouns "doorman" "gentleman" "bouncer"
+	article "the"
+
+	long_desc
+	{
+		"Not everyone gladhandled their way onto Phobos due to their charm and good looks like you did, Raif. Some denizens look like they were either spontaneously
+		generated from one of the wetter craters, or else pantomimed from some forgotten bulge on John Merrick. \n"
+		
+		"The doorman obviously can't afford to acquire a ticket to Earth to escape the impending doom, but there's always the possibility of just holding on
+		tight and surfing down to Mars. It's only 4600 meters, which, by a strange coincidence, is the average distance most females would be from him in the solar
+		system if he didn't work at Kangaroo's."
+	}
+	before
+	{
+		xobject DoGive, DoShow
+		{
+			if object = red_keycard
+			{
+				remove red_keycard
+				CharExclaim(Doorman,ExclaimArray[1])
+			}
+			else
+			{
+				"He doesn't really care about that."
+			}
+		}
+	}
+}
+
+
+character Raif2 "unruly customer"
+{
+charnumber 8
+maxhitpoints 40
+hitpoints 40
+armorclass 20
+attackadjust 0
+damagepotential 0
+karma -10
+
+is not quiet, hero, hidden
+
+	inherits NPC
+
+	nouns "customer" "" "" "" "" "" 
+	adjective "unruly" "would-be" "problematic" ""
+	article ""
+
+	long_desc
+	{
+		if Chapter = 5
+		{	
+			"He looks exactly like you did a few years ago in every way. ";
+
+			if Raif is Chip01_Seeing_Mimes
+			{
+				"The only difference is that the word 'PANTOMIME' is present above his head."
+			}
+			else
+			{
+				""
+			}
+		}
+		else
+		{
+			"He is wearing a hooded sweatshirt, with the hoodie over his eyes... slim build... rather non-descript, actually."
+		}
+	}
+}
+
+
+female_character Magnolia "Magnolia"
+{
+charnumber 9
+
+maxhitpoints 40
+hitpoints 40
+armorclass 6
+attackadjust 3
+damagepotential 3
+karma 0
+
+is not quiet, hero, female, hidden, dancer
+
+	inherits NPC
+
+	mimename "\IMagnolia\i"
+
+	nouns "stripper" "dancer" "girl" "brunette" "magnolia" "woman" "mag"
+
+!	parse_rank
+
+	long_desc
+	{
+		PM(Magnolia)
+		" is just under two meters tall. She's wearing a gray silk collared shirt, the kind that that they make to fit slim, well-endowed girls. It looks as if it was
+		specifically tailored for her. The shirt is untucked over a pair of tight denim jeans. She has a mess of curly dark locks that spill all over her 
+		face, and big almond eyes that complete the look she carefully selected for herself."
+
+		self is not hidden
+
+		if Raif is Chip01_Seeing_Mimes
+		{
+			""
+			PM(Magnolia)
+			" has the word 'PANTOMIME' hovering over her head in a thick Impact font, due to the code you ingested earlier."
+		}
+	}
+
+}
+
+
+character Chmod "Mr Chmod"
+{
+charnumber 10
+
+maxhitpoints 40
+hitpoints 40
+armorclass 10
+attackadjust 3
+damagepotential 3
+karma 100
+
+is quiet, hero, not hidden, switchable, switchedon
+
+in Corridor1
+
+	inherits NPC
+
+	nouns "mr." "mr" "chmod" "robot" "cleaner" "vac" "attachments" "led"
+	adjectives "mr" "chmod" "vacuum" "shop"
+
+	initial_desc
+	{
+		if GameEvents[15] = 1
+		{
+			"\nMr Chmod is here, giggling to himself."
+		}
+
+		elseif Chapter = 5
+		{
+			"\nMr Chmod is here, however he has been severely damaged (presumably by Mr Kangaroo)."
+		}
+		else
+		{
+			"\nMr. Chmod is here."
+		}
+	}
+	
+	long_desc
+	{
+		if  GameEvents[1] = 0
+		{
+			GameEvents[1] = 1
+			"Artificial intelligence reached a breakthrough years ago when a computer science grad student and extreme programmer 
+			named Mendenhall tried to get his robot to drive in downtown Denver during rush hour. Mendenhall learned that his construct was wholly
+			able to blend in from exit 195 to 240 even though his code had several logic errors in the driving routines. The robot noticed
+			as many unblinking turn signals, acts of tailgating and poor decision making during lane merges from the other drivers --
+			as well as producing as many extended middle fingers -- as Mendenhall's own driving did. Because you write the tests before 
+			the code in extreme programming Mendenhall pronounced his work as complete and graduated. \n"
+
+			"The next day Mendenhall's robot left at half past three and initiated the obligatory evening-commute-turned-parking-lot by crashing
+			into an abandoned Passat in the breakdown lane. Mendenhall pronounced it as the proudest day of his life. \n"
+
+			"Mr Chmod is a sentient shop vac and likewise, extreme programmed. 
+			He is two meters in height with long, floppy arms and a variety of attachments on the back. 
+			He has tank tread at the bottom of his slender base that provide locomotion and a small cylinder at head level that contains 
+			most of his brain procedures and a Toronto Blue Jays cap you gave him. He is gray and red and has a 'TYPE R' sticker that was unknowingly 
+			placed on his back by you."
+
+		}
+
+		else
+		{
+			"Mr Chmod is a sentient shop vac. He is two meters in height with long, floppy arms and a variety of attachments on the back. He has tank tread
+			at the bottom of his slender base that provide locomotion and a small cylinder at head level that contains most of his brain procedures and a 
+			Toronto Blue Jays cap you gave him. He is gray and red and has a 'TYPE R' sticker unknowingly placed on his back by you."
+		}
+	}
+
+	before
+	{	
+		object DoGet
+		{
+			"Chmod was designed to be too heavy to lift even in this weak gravitational field."
+		}
+
+		xobject DoGive, DoShow
+		{
+			select(object)
+			case red_keycard
+			{
+				CharExclaim(Chmod,ExclaimArray[1])
+			}
+
+			case else
+			{
+				"Chmod doesn't have anything to say."
+			}
+		}
+		object DoSwitchOn
+		{
+			if self is switchedon
+			{
+				"He's already on."
+			}
+			else
+			{
+				if self.hitpoints = 0
+				{
+					"Nothing happens."
+				}
+				else
+				{
+					self is switchedon
+					"He begins to hum and crackle with life... the LED lights up once again!"
+				}
+			}
+		}
+		object DoSwitchOff
+		{
+			if self is not switchedon
+			{
+				"He's already off."
+			}
+			else
+			{
+				if self.hitpoints = 0
+				{
+					"Nothing happens."
+				}
+				else
+				{
+					if Chapter = 5 and GameEvents[36] = 0
+					{
+						self is not switchedon
+
+						GameEvents[36] = 1
+						"\"This is for your own good, buddy,\" you say as you turn him off. The light goes out in his LED. He is powered off."
+					}
+					else
+					{
+						"\"Get off me!\" exclaims Mr Chmod."
+					}
+				}
+			}
+		}
+
+	}
+}
+
+	
+object remote_oldsoul "old soul"
+{
+
+	nouns "old" "soul" "man" "guy" "teller" "clerk" "asian"  "cho" "fellow" "manager" "person" "human"
+	adjectives "old" "wizened" "asian"  "mr" "mister" 
+	article "the"
+
+	charnumber 111
+
+	is living, hidden
+	inherits NPC
+
+	in Corridor2
+
+type remote_object
+real_object oldsoul
+parse_rank -1
+
+maxhitpoints 10
+hitpoints 10
+armorclass 10
+attackadjust 0
+damagepotential 0
+karma 0
+
+	long_desc
+	{
+		return self.real_object.long_desc
+	}
+	before
+	{
+		object DoTalk
+		{
+			Perform(&DoTalk, oldsoul)
+		}
+
+		object DoLook
+		{
+			return false
+		}
+
+		xobject DoGive, DoShow
+		{
+			select(object)
+			case wallet
+			{
+				DoBuyMembership()
+			}
+
+			case else
+			{
+				"The old guy couldn't be less interested if his heart were stopped."
+			}
+		}
+	}
+}
+
+
+character oldsoul "old soul"
+{
+charnumber 11
+
+maxhitpoints 10
+hitpoints 10
+armorclass 10
+attackadjust 0
+damagepotential 0
+karma 0
+
+is not quiet, hero, not hidden
+
+!in SideRoom1
+
+	inherits NPC
+
+	nouns "old" "soul" "man" "guy" "teller" "clerk" "asian"  "cho" "fellow" "manager" "person" "human"
+	adjectives "old" "wizened" "asian"  "mr" "mister" 
+	article "the"
+
+	long_desc
+	{
+		if GameEvents[2] = 0
+		{
+		GameEvents[2] = 1
+
+			"This older, Asian fellow sits stooped upon a bar stool behind a strong, transparent shield. Chmod has told you that 
+			apparently a not-insignificant number of Phobos dwellers get this far into the club and then just snap when faced with the 
+			'membership fee' you have to buy for the evening. One guy brought out a morning star, which you had never heard of outside 
+			of one of those long-forgotten kid's games like 'Dungeons and Dragons,'  'Magic: The Gathering' or 'Connect Four.' The guy 
+			was tackled before he got a good swing with his weapon, but the old guy sitting before you was sufficiently spooked to 
+			demand unbreakable glass to sit behind."
+
+		}
+		else
+		{
+			"This older Asian fellow sits stooped upon a bar stool behind a strong, transparent shield. He's quite wrinkled and hunched-over.
+			It looks like his clothes probably fit him fine 50 years ago, but those days are long gone and he never felt the need
+			to purchase a new wardrobe when it became obvious that styles and planetoids changed."
+		}
+	}
+	before
+	{
+		xobject DoGive, DoShow
+		{
+			select(object)
+			case wallet
+			{
+				DoBuyMembership()
+			}
+
+			case else
+			{
+				"The old guy couldn't be less interested if his heart were stopped."
+			}
+		}
+	}
+}
+
+
+character Joe "\I\BJoe\b\i"
+{
+charnumber 12
+maxhitpoints 40
+hitpoints 40
+armorclass 6
+attackadjust 3
+damagepotential 3
+karma 100
+
+is not quiet, hero, asleep
+
+	inherits NPC
+
+	nouns "joe" "carter" "joseph"
+	adjectives "joe" "joseph" "chris"
+!	parse_rank
+
+	long_desc
+	{	
+		"\I\BJoe\b\i has a big, friendly face, an athlete's body and an often blank mind that betrays his origin --  he is a second pantomime of a dead baseball player.
+		A copy of a copy."
+
+
+		if self is asleep
+		{
+			"He is asleep on your couch."
+		}
+
+		if Raif is Chip01_Seeing_Mimes
+		{
+			"\nAbove \B\IJoe's\i\b head is the word \BPANTOMIME\b in a thick Impact font. "
+		}
+	}
+	before
+	{
+		object DoWakeCharacter
+		{
+
+			if self is asleep
+			{
+				"It's useless, he's the most complete and dedicated sleeper you have ever known. "
+			}
+			else
+			{
+				"This is as alert as he's going to get."
+			}
+		}
+		object DoSearch
+		{
+			"He doesn't have anything of value."
+		}
+	}
+}
+		
+
+character Kangaroo "Mr Kangaroo"
+{
+charnumber 13
+maxhitpoints 40
+hitpoints 40
+armorclass 6
+attackadjust 3
+damagepotential 3
+karma 0
+
+is not quiet, hero, hidden 
+
+	inherits NPC
+
+	nouns "kangaroo" "boss" "mr" "robot" "mr."
+	adjectives "kangaroo" "mr" "mr."
+	parse_rank 2
+
+	in StripOffice01
+
+	long_desc
+	{
+		if Chapter < 5
+		{
+		
+			"He is just under what your threshold would be for describing someone as chubby. He has a wisps of dishwater colored, wholly fake wig hair combed over his 
+			jutting forehead and brows. The occasional droplet of greasy oil navigates the rough terrain of his face, while a veritable exhaust system 
+			of something resembling perspiration accumulates around his pits."
+		}
+		else
+		{
+			"He is a cruel pantomime of humanity, with gobs of flesh and body parts loosely attached to his body. His previously metallic hands are now within fleshy
+			gloves, his eyes no longer blue LEDs but bloody brown human eyes, gouged from a corpse. His thighs are belted on, thick runner's muscles covering
+			his original aluminum frame. He has become a monster."
+		}
+	}
+	before
+	{
+		object DoHit
+		{
+			if Chapter < 5
+			{
+				"Violence is not the answer to this one."
+			}
+			else
+			{
+				"Kangaroo viciously lashes out, preventing you from getting close."
+			}
+		}
+	}
+}
+
+
+character Alexei "dead body" 
+{
+charnumber 14
+maxhitpoints -100
+hitpoints -101
+armorclass 0
+attackadjust 0
+damagepotential 0
+karma 0
+
+is quiet, hero
+
+	inherits NPC
+
+	nouns "alexei" "alexai" "mitchell" "body" "corpse" "cadaver"
+	adjectives "alexei" "dead"
+	article "a" ""
+
+	in Slab01
+
+	long_desc
+	{
+		If GameEvents[19] = 0
+		{
+			GameEvents[19] = 1
+			SetQuip(10,22,1)
+			SetQuip(10,20,1)
+		}
+
+		if ClueArray[1] = 1
+		{
+			"He would have been handsome folk when alive: square jaw, dark, thriving hairline, clear, tanned skin. Someone had gouged his eyes out with what
+			appears to have either been thumbs or a flathead screwdriver."
+
+		}
+		else
+		{
+			"He would have been handsome folk when alive: square jaw, dark, thriving hairline, clear, tanned skin. He looks to be sleeping quite peacefully,
+			but you know the truth." 
+		}
+	}
+}
+
+
+female_character Kitler "Ms. Kitler"
+{
+charnumber 15 
+maxhitpoints 40
+hitpoints 40
+armorclass 0
+attackadjust 0
+damagepotential 0
+karma 0
+
+is quiet, hero, female, hidden
+
+	inherits NPC
+
+	nouns "ms" "kitler" "robot" "droid"
+	adjective "ms" 
+
+	in Diner
+
+	long_desc
+	{
+		"Ms Kitler is the robotic waitress and short-order cook always working at the diner. She has only the most rudimentary 
+		human characteristics, and even those fall apart should your viewing angle properly cross the bar, where it is obvious that
+		she is bolted to the floor."
+	}
+}
+
+
+character Sun "Sun"
+{
+charnumber 16
+maxhitpoints 300
+hitpoints 300
+armorclass 300
+attackadjust 300
+damagepotential 300
+karma 10
+
+is quiet, hero, hidden
+	
+	inherits NPC
+
+	found_in Airlock Alley03
+
+	pronouns "I", "me", "my", "myself"
+	nouns "sun" "sol"  "you"
+	article "the"
+	
+	long_desc
+	{
+		"Artists have tried to describe my radiant power for eons, yet failed, as I am so difficult to look upon from Earth with the 
+		unaided eye... no matter.
+		I am a handsome, perfect sphere of plasma at the center of this solar system. I am three-quarters hydrogen, one quarter helium... and yes,
+		there are a few trace elements inside me as well. I am 4.6 billion years old, but I don't look a \Iday\i over four. "
+	}
+	before
+	{
+		object DoHit
+		{
+			"You can't fight me. You shouldn't want to. I'm the \BSun!\b"
+		}
+		object DoSmell
+		{
+			"You can't smell me from Phobos!"
+		}
+		object DoListen
+		{
+			"No, no -- you go ahead."
+		}
+		object DoTouch, DoPush, DoPull
+		{
+			"You can't. (It's for the best.)"
+		}
+	}
+}
+
+
+character cop "cop"
+{
+charnumber 17
+maxhitpoints 100
+hitpoints 100
+armorclass 100
+attackadjust 100
+damagepotential 100
+karma 0
+
+is quiet, hero
+	
+	inherits NPC
+
+	nouns "policeman" "man"  "cop" "officer"
+	adjective "police"
+	article "the"
+
+	long_desc
+	{
+		"He is obviously concerned with your predicaments, but that doesn't stop him openly grinning about leaving Phobos very shortly."
+	}
+}
+
+
+female_character MrsK "Mrs. Kangaroo"
+{
+charnumber 18
+maxhitpoints 30
+hitpoints 30
+armorclass 1
+attackadjust 0
+damagepotential 1
+karma 0
+
+is quiet, hero
+	
+	inherits NPC
+
+	in Mansion 
+
+	nouns "kangaroo" "mrs."
+	adjective "mrs." "mrs"
+	parse_rank 1
+	
+	long_desc
+	{
+		if location = Mansion
+		{
+			"She is in her late thirties, with shoulder-length brown hair and vivid blue eyes. She has been beaten rather badly, and her 
+			face and arms are covered with bruises. She is laying on her side on the bare floor before you."
+		}
+		else
+		{
+			"She is in her late thirties, with shoulder-length brown hair and vivid blue eyes. She has been beaten rather badly, and her 
+			face and arms are covered with bruises. "
+		}
+	}
+}
+
+
+!----------------------------------------------------------------------------
+! CharExclaim
+! Script usage:  &CharExclaim, <char> <obj>
+
+routine CharExclaim(char, obj)
+{
+
+select (char)
+	case Chmod:
+		{
+		select(obj)
+			case ExclaimArray[1]
+				{
+				"\n\"What do you want me to do with that?\" asks Chmod.\n"
+				"\"I don't know... can't you... I dunno, \Iaccess\i it or something?\"\n"
+				"\"Just give it to the doorman, dummy. It will get you in.\""
+				}
+			case ExclaimArray[2]
+				{
+				"Chmod addresses you before you leave. \"Lemme go investigate Kangaroo's office - I can pretend to be just
+				a mechanized janitor to vacuum up the place. I'll call you when I know more.\""
+				}
+		}
+	case Doorman:
+		{
+		select(obj)
+			case ExclaimArray[1]
+				{
+				Corridor1_Door is not locked
+				Corridor1_Door is not lockable
+				Corridor1_Door is openable
+				Corridor1_Door is open
+				move sticker1 to Doorman
+				SetQuip(7,1,0)
+				SetQuip(7,2,0)
+				SetQuip(7,3,0)
+
+				"\n\"Okay,\" he says, \"You can go in.\" He lets Chmod past as well.\n"
+				"\"Hey!\" cries out some nobody a few places back in line, \"How come the robot gets to go in? He ain't got a
+				card!\"\n"
+				"\"Shut up,\" suggests the doorman. \"You could all shut up...  The robot spent more here last night than any of you have in the last month.\"
+				That seems to satisfy the crowd for the most part, at least those who care about a walking shop vac
+				getting some place before them.\n"
+				"Chmod bristles for a second. \"That's embarrassing, man... don't tell them that.\"\n"
+				"The doorman looks ready to affix a 'Lap Dance King' sticker to Chmod."
+				}
+		}
+	case Cinnamon
+		{
+		select(obj)
+			case ExclaimArray[1]
+			{
+				"\n\"I don't know why I bothered to come here. You turned in ";
+				PM(Magnolia)
+				", you prick! Mr Kangaroo fired her!\" "
+			}
+		}
+	case Kangaroo
+		{
+		select(obj)
+			case ExclaimArray[1]
+			{
+				"\n\"You have no idea how far I was going to go for this!\" Nobody is really sure what Mr Kangaroo is talking about, so he starts
+				pointing to the different parts of his body that he attached. \"The hands... of \IJohnny Bench!\i\" You recall that Bench was a 
+				baseball player who could fit seven baseballs in his hands at once. Enormous hands. He was a Hall of Fame catcher. Whether
+				Kangaroo is lying or not, the human hands he picked out are definitely big."
+			}
+			case ExclaimArray[2]
+			{
+				"\n\"The heart of \IWilliam Howard Taft!\i\ BZZT! This one just fell right to me! Some other slob pulled the trigger... and I 
+				reaped the rewards! BZZT BZZZZT BZZZT!\" Kangaroo continues his insane monologue."
+			}
+			case ExclaimArray[3]
+			{
+				"\n\"That bastard I was in business with had the most gooooOOOorgeous eyes, my fleshling wife said... Who has them now, honey?? Bah! Who
+				has them now??!\" Kangaroo points to the eyes he ripped out of Alexei, the human he was once in business with."
+			}
+			case ExclaimArray[4]
+			{
+				"\n\"My wife fancied all manner of men and boys... that damnable teenager from the market... I got him, too! Lookit this six pack!\"
+				Kangaroo attempts to show off the fake abdominal muscles he placed upon the area where his stomach would be, if he were not
+				a robot, but thrusting them forward. That one's a little too much for Cinn, who stifles a nervous laugh."
+			}
+			case ExclaimArray[5]
+			{
+				"\n\"All the pantomimes I could grow, I harvested their interesting organs, limbs and muscles... so goddamn self-entitled, all of them! Born
+				out of a vat, filled with jelly, oozing humanity... Here's some god damned humanity!\" At this, Kangaroo just starts really embarassing
+				himself and your mind starts to focus on what happened to \B\IScarlett.\b\i \"Enjoy my copy of \IPeter North's\i cock!\" (Nobody is
+				enjoying it.)"
+			}
+			case ExclaimArray[6]
+			{
+				"\n\"All of you that are in my way will remain here until I can get passage off this moon... you can rot and die here, you \Iwill\i rot and
+				die here... the last human to make it off this wretched asteroid will be this machine -- enhanced!\""
+			}
+			case ExclaimArray[7]
+			{
+				"\n\"How long have I built wealth and power?\" Kangaroo continues his unwanted, unwelcome keen. 
+				\"In a low gravity environment, of course the unwashed commoner would want to view
+				women shaking their tits in near-zero gee. Mine is the only business that has survived, and it shall only get stronger on Deimos or
+				Charon!\""
+			}
+			case ExclaimArray[8]
+			{
+				"\n\"These parts,\" says Kangaroo, \"Were not easy to obtain. You don't simply thumb through a catalog and get \IJim Brown's\i thighs,
+				or \IJerry Rice's\i knees. It costs money. More money than any of you could obtain with your limited skill sets, education and 
+				ambition. Obviously, I am far, far ... better than all of you. I have done the impossible! I am a god!\""
+			}
+			case ExclaimArray[9]
+			{
+				"\nMr Kangaroo seems to have frozen up... or he is planning his next big diatribe."
+			}
+			case ExclaimArray[10]
+			{
+				"\n\"I only regret,\" says Kangaroo, \"Not eating the rest of my slaves. Adding their strength to mine in that manner. There were logistics...
+				problems with logistics... \" He wanders off into further thought."
+			}
+			case ExclaimArray[11]
+			{
+				"\n\"I... what is happening?\" asks Mr Kangaroo. \"What is... I don't feel so...\""
+			}
+		}
+
+
+	case MrsK
+		{
+		select(obj)
+			case ExclaimArray[1]
+			{
+				GameEvents[32] = 1
+
+				MrsK.hitpoints = 0
+				MrsK.conscious = 0
+
+				"\n\"Mrs. Kangaroo, I presume. I wish we could have met under less stressful circumstances.\"\n"
+
+				"She coughs. Bits of blood escape her lungs and leave a shotgun spray across the floor.\n"
+
+				"\"I am,\" she wheezes.\n"
+
+				"\"Who did this to you?\"\n"
+
+				"\"My husband... do you... are you aware, do you know -- \"\n"
+
+				"\"I know who your husband is, sure. Did he find out who you were sleeping with? Does he even care? Is he wired that way?\"\n"
+
+				"The missus shakes her head, slowly. You think you hear something crack. \"He didn't... he thinks I cheated on him with his best
+				friend... that Russian man, Alexei... hah! He has no idea! As if... as if... \" she dissolves into a fit of coughing. You briefly consider
+				getting her some water, but you're really close to getting some answers. Refreshment can wait.\n"
+
+				"\"It wasn't Alexei, then? Alexei is dead, you know.\"\n"
+
+				"\"I know that... now, yes, I know that now... no... I told him that Alexei had the most beautiful eyes I had ever seen, but... I didn't, 
+				I was just...\" Are you supposed to say tah-tah at this point? You don't. \"No, a boy working at the supermarket... please, help him. Help him!
+				His name is Thomas... he's just a boy...\" You decide to wait this one out. \"Strong, yes, but he's... he doesn't... please, help him... please...\"\n"
+
+				"She falls asleep. The authorities will probably be along to get her off the moon before too long."
+			}
+		}
+	
+	return
+}		
+
+routine CharRemMag()
+{
+	remove Magnolia
+	return true
+}
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!	SCRIPTS
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+routine magnolia_leaves_office
+{
+
+setscript[Script(magnolia, 3)] = &CharMove, w_obj,
+				&CharMove, s_obj,
+				&CharRemMag
+}
+
