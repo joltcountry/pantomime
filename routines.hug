@@ -36,7 +36,7 @@ routine DoVersion
 	color TEXTCOLOR
 	print "Interactive Fiction"
 	print "Copyright (c) 2006. Written and programmed by Robb Sherwin"
-	print "Release 1.02 / Serial number 060426 / Hugo 3.1\n"
+	print "Release 1.03 / Serial number 060427 / Hugo 3.1\n"
 
 }
 

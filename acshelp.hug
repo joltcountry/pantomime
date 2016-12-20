@@ -224,6 +224,9 @@ routine Help_ReleaseHistory
 	"\n\IRelease 1.02 (April 26th, 2006)\i\n\
 	\_     The third release of PANTOMIME\n\n";
 
+	"\n\IRelease 1.03 (December 26th, 2016)\i\n\
+	\_     The fourth release of PANTOMIME\n\n";
+
 
 	"\n[Press a key...]";
 	pause
@@ -262,7 +265,7 @@ routine Help_License
 	"Copyright (c) 2006 by Robb Sherwin"
 
 	"\n\BHugo Compiler and Engine\b"
-	"Copyright (c) 1995-2006 by Kent Tessman"
+	"Copyright (c) 1995-2016 by Kent Tessman"
 	"\nThis game (";
 	GameTitle
 	") is copyright (c) 2006 by Robb Sherwin (the author).  The author

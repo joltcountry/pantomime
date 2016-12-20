@@ -209,14 +209,14 @@ property mimename
 global	Chapter = 1
 global	old_counter = 0
 
-constant RELEASE "1.02"
+constant RELEASE "1.03"
 
 routine init
 {
 	window 0
 	system(22)
 
-	display.title_caption = "PANTOMIME 1.02 by Robb Sherwin"
+	display.title_caption = "PANTOMIME by Robb Sherwin"
 
 	counter 	= 1175
 	STATUSTYPE = 2
@@ -527,20 +527,19 @@ LightRoom StripClub "Kangaroo's Midnight Gentleman's Club"
 
 			Activate(Cinn_On_Stage)
 
-			"Bars on all sides surround a central stage where a slick, rectangular dancing platform sits. Most adult clubs have either a 
-			Marilyn Monroe or Audrey Hepburn clone working for them because people born in the 20th century don't have their DNA under 
-			an ironclad copyright. However, the owner of this club prides himself on having no pantomimes dancing. The DJ's patter is painfully 
-			hipster and the girls hardly ever lip synch the words of the songs. The graceful arc and beauty of women are the chief form of entertainment on
-			Phobos -- it would have been jugglers, save for the fact that the weak gravity generators installed below made everyone a three-chainsaw
-			and Tabby expert."
+			"Bars on all sides surround a central stage where a slick, rectangular dancing platform sits. Most adult clubs have either an 
+			Audrey Hepburn, Marilyn Monroe or Marilyn Manson clone working for them, as people born in the 20th century don't have their DNA under 
+			an ironclad copyright. However, the owner of this club prides himself on having no pantomimes dancing. He doesn't pride himself on keeping
+			a rudimentally clean establishment or in hiring non-cringeworthy DJs. The graceful arc of the dancers are the chief form of entertainment on
+			Phobos -- it probably would have been jugglers, save for the fact that the lack of even weak gravity generators makes everyone a three-chainsaw
+			and tabby expert."
 		}
 		else
 		{
 
-			"It's like any other strip club in the future and past: bars on all sides surround a central stage where a slick, rectangular 
-			dancing platform sits. Twin bubbly and transparent poles on either edge of the platform rise vanish into a thick, foggy 
-			ceiling, and fairly frequently a beautiful woman wraps herself around one of them. There are 
-			tables scattered all around, with their own metallic poles stretching up into the nothingness."
+			"It's got bars to drink from on all sides surrounding a central stage where a glittery, rectangular dancing platform sits. Twin bubbly and transparent poles 
+			on either edge of the platform rise vanish into a foggy ceiling. Beautiful woman wrap themselves around one to the music. There are tables scattered 
+			about, with their own metallic poles stretching up into the nothingness."
 		}
 	}
 
@@ -565,7 +564,7 @@ LightRoom Office "Your Office"
 		if self is not visited
 		{
 			"It was seven (Earth) days ago that you witnessed the two murders. The shots caused half of the people in the club 
-			to panic and evacuate. Chmod felt that someone still had to deliver the news that \ITaft\i traveled to say, at 
+			to evacuate. Chmod felt that someone still had to deliver the news that \ITaft\i traveled to say, at 
 			which point the other half of the club ran screaming. \n"
 
 			"You were given priority to leave Phobos because of your girlfriend's death. But after taking care of some business on
@@ -573,13 +572,13 @@ LightRoom Office "Your Office"
 			just a couple of mimes.\n"
 		}
 
-		"Your office is on the 6th floor of the tallest building on Phobos. From the roof of this building you can see the bubble and
+		"Your office is on the 6th floor of the tallest building on Phobos. From the roof of this building you can see the life bubble and
 		in saner days it was guarded.\n"
 
 		"This room is dominated by a massive carved rock desk. Your couch is off to the side, next to your mini-fridge and chess table.
 		You used to have a projector on the ceiling that allowed you to watch television, but it overheated and broke. You sent it
 		back to Earth for repair, but that was nine months ago. Your faith that it will ultimately arrive the day after Phobos breaks up
-		is unshaking."
+		into a Martian ring is unshaking."
 
 		if parent(Joe) = couch01
 		{
@@ -675,9 +674,10 @@ LightRoom2 Alley02 "Outside Kangaroo's Midnight Gentleman's Club"
 				jacket. You hit the pavement to avoid further blasts, heart pumping at about a thousand beats per minute.\n"
 
 
+				"\B[Strike any key to continue]\b"				
 				pause
 
-				"You slowly get back on your feet, keeping your hands in front of your head in case the shooter is still around, or 
+				"\nYou slowly get back on your feet, keeping your hands in front of your head in case the shooter is still around, or 
 				reloading or something. After a few moments your fear turns to anger. A few more moments, when you're
 				confident that he didn't load a fresh magazine, you can't wait to find the yellowbacked little puke who did this to you. 
 				The fact that you flew to and from this moon on a commercial flight should have done enough to enhance your reputation 
@@ -747,7 +747,7 @@ LightRoom StripOffice01 "Office"
 	{
 		if self is not visited
 		{
-			"It's surprisingly cozy in here. Wood paneling faces off the walls and ceiling, with tiger-striped carpeting making each step comfy.
+			"Surprisingly cozy. Wood paneling faces off the walls and ceiling, with tiger-striped carpeting making each step comfy.
 			Various animal heads, mounted as trophies, stare vacantly ahead. Most of the remaining real estate on the walls are taken up by 
 			autographed head shots of celebrities.\n"
 			

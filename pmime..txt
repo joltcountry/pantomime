@@ -1,0 +1,11 @@
+PANTOMIME 1.03 by Robb Sherwin
+December 26th, 2016
+
+This archive contains
+
+	PMIME.EXE executable
+	PMIME.HEX story file
+	PMIME.TXT this file
+
+The OSX and Linux/Unix interpreter is called Hugor and
+is available through http://ifwiki.org/index.php/Hugor

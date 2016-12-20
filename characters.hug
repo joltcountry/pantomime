@@ -366,8 +366,8 @@ in Corridor1
 
 	inherits NPC
 
-	nouns "mr." "mr" "chmod" "robot" "cleaner" "vac" "attachments" "led"
-	adjectives "mr" "chmod" "vacuum" "shop"
+	nouns "mr." "mr" "chmod" "robot" "cleaner" "attachments" "led" "shop-vac", "shopvac" "vacuum"
+	adjectives "mr" "chmod" "vacuum",  "mr."
 
 	initial_desc
 	{
@@ -382,7 +382,7 @@ in Corridor1
 		}
 		else
 		{
-			"\nMr. Chmod is here."
+			"\nMr Chmod is here."
 		}
 	}
 	
@@ -401,7 +401,7 @@ in Corridor1
 			"The next day Mendenhall's robot left at half past three and initiated the obligatory evening-commute-turned-parking-lot by crashing
 			into an abandoned Passat in the breakdown lane. Mendenhall pronounced it as the proudest day of his life. \n"
 
-			"Mr Chmod is a sentient shop vac and likewise, extreme programmed. 
+			"Mr Chmod is a sentient Shop-Vac and likewise, extreme programmed. 
 			He is two meters in height with long, floppy arms and a variety of attachments on the back. 
 			He has tank tread at the bottom of his slender base that provide locomotion and a small cylinder at head level that contains 
 			most of his brain procedures and a Toronto Blue Jays cap you gave him. He is gray and red and has a 'TYPE R' sticker that was unknowingly 
@@ -411,7 +411,7 @@ in Corridor1
 
 		else
 		{
-			"Mr Chmod is a sentient shop vac. He is two meters in height with long, floppy arms and a variety of attachments on the back. He has tank tread
+			"Mr Chmod is a sentient Shop-Vac. He is two meters in height with long, floppy arms and a variety of attachments on the back. He has tank tread
 			at the bottom of his slender base that provide locomotion and a small cylinder at head level that contains most of his brain procedures and a 
 			Toronto Blue Jays cap you gave him. He is gray and red and has a 'TYPE R' sticker unknowingly placed on his back by you."
 		}
@@ -940,7 +940,7 @@ select (char)
 				"\"Hey!\" cries out some nobody a few places back in line, \"How come the robot gets to go in? He ain't got a
 				card!\"\n"
 				"\"Shut up,\" suggests the doorman. \"You could all shut up...  The robot spent more here last night than any of you have in the last month.\"
-				That seems to satisfy the crowd for the most part, at least those who care about a walking shop vac
+				That seems to satisfy the crowd for the most part, at least those who care about a walking Shop-Vac
 				getting some place before them.\n"
 				"Chmod bristles for a second. \"That's embarrassing, man... don't tell them that.\"\n"
 				"The doorman looks ready to affix a 'Lap Dance King' sticker to Chmod."

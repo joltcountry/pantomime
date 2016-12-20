@@ -1059,13 +1059,13 @@ object booth "corner booth"
 
 object chmod_cap "cap"
 {
-	nouns "cap" "hat"
-	adjectives "blue" "jays" "baseball"
+	nouns "cap" "hat" 
+	adjectives "toronto" "blue" "jays" "baseball"
 	article "Chmod's"
 
 	in Chmod
 
-	is clothing, quiet
+	part_of Chmod
 
 	long_desc
 	{
@@ -1079,6 +1079,43 @@ object chmod_cap "cap"
 		{
 			"Stealing hats? How old are you? What next, hair pulling?"
 		}
+	}
+}
+
+object chmodLiquidAttachment
+{
+	nouns "attachment"
+	adjective "liquid"
+	article "Chmod's"
+
+	in Chmod
+	part_of Chmod
+
+	long_desc {
+
+		"The only thing that really differentiates it from the attachments used to vacuum up various solids is that it has the word 'LIQUID' written on it."
+	}
+	before {
+		object DoGet {
+			"Well, you really have no idea what sort of fluids Chmod has cleaned up with it and while difficult, it's still possible to catch a disease in the life bubble."
+		}
+
+	}
+}
+
+object typeRSticker "Type-R Sticker"
+{
+	nouns "sticker"
+	adjective "type-r"
+	article "Chmod's"
+
+	in Chmod
+	part_of Chmod
+
+	long_desc {
+
+		"Type-R was an old indicator of performance for a long forgotten car company. You've never been sure if Chmod hasn't suctioned it off because he doesn't know it's there
+		or because he can't reach it."
 	}
 }
 
